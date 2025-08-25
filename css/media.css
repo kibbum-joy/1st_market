@@ -1,0 +1,1080 @@
+@charset "utf-8";
+
+/* pc버전 */
+@media(max-width:1900px) {
+    .container {
+        width: 100%;
+    }
+
+    /* 헤더영역 */
+    .header {
+        width: 99%;
+    }
+
+    #Nav {
+        width: 100%;
+    }
+
+    #Nav>.Main_menu>li {
+        width: 100%;
+    }
+
+    /* 베너영역 */
+    .banner {
+        width: 100%;
+        height: auto;
+        /* position: relative; */
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .boox img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sub_btn {
+        width: 50px;
+        height: 50px;
+        top: -20px;
+        right: 50px;
+    }
+
+    .banner_sub>.boox img {
+        transform: scale(0.8);
+        transform-origin: center;
+
+    }
+
+    .slider2 .banner_sub2 {
+        width: 100%;
+        height: 90%;
+    }
+
+    .sub_btn2 a.btn {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 0px;
+    }
+
+    /* con1 */
+    .contents1 {
+        width: 100%;
+    }
+
+    .contents1>h3::after {
+        width: 30%;
+        transition: all 1s;
+    }
+
+    .contents1>h3::before {
+        width: 30%;
+        transition: all 1s;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
+
+    /* con2 */
+    .contents2 {
+        width: 100%;
+    }
+
+    .contents2>h3::after {
+        width: 30%;
+        transition: all 1s;
+    }
+
+    .contents2>h3::before {
+        width: 30%;
+        transition: all 1s;
+    }
+
+
+    /* con3 */
+    .contents3 {
+        width: 100%;
+    }
+
+    .contents3>h3::after {
+        width: 30%;
+        transition: all 1s;
+    }
+
+    .contents3>h3::before {
+        width: 30%;
+        transition: all 1s;
+    }
+
+    /* con4 */
+    .contents4 {
+        width: 100%;
+    }
+
+    .contents4>h3::after {
+        width: 30%;
+        transition: all 1s;
+    }
+
+    .contents4>h3::before {
+        width: 30%;
+        transition: all 1s;
+    }
+
+    .contents4 img {
+        /* width: 100%; */
+    }
+
+
+    /* con5 */
+    .contents5 {
+        width: 100%;
+    }
+
+    .contents5>h3::after {
+        width: 30%;
+        transition: all 1s;
+    }
+
+    .contents5>h3::before {
+        width: 30%;
+        transition: all 1s;
+    }
+
+    /* footer 영역 */
+    .footer {
+        width: 100%;
+        max-width: 1420px;
+        height: 700px;
+    }
+
+    .footer>h1 {
+        width: 30%;
+        max-width: 385px;
+    }
+
+    .footer h1>a>img {}
+
+    .footer nav {
+        position: absolute;
+        top: 0px;
+        width: 50%;
+        height: 30%;
+    }
+
+    .footer nav .gnbFoot {
+        width: 100%;
+        max-width: 710px;
+    }
+
+
+    .footer nav ul.gnbFoot>li::before {
+        width: 5px;
+        height: 30px;
+        margin-bottom: 54px;
+
+    }
+
+    .footer nav h3 {}
+
+    .footer nav a {}
+
+    .footer nav ul ul li {}
+
+    .footer nav .about {
+        position: absolute;
+        top: 350px;
+    }
+
+    .footer nav .about>li {}
+
+    .footer nav .about>li:first-child a {}
+
+
+    .footer section {
+        width: 100%;
+        max-width: 1420px;
+        /* height: 40%; */
+        /* background-color: rgb(255, 120, 120); */
+        top: 55%;
+    }
+
+
+}
+
+/* max-width:1900px */
+
+
+
+
+/* pc */
+@media(max-width:1440px) {
+
+    /* .header-------------------------------- */
+    .header>h1 {
+        width: 300px;
+        line-height: 100px;
+    }
+
+    .header>h1>a {}
+
+    #Nav>.Main_menu>li>a {
+        line-height: 50px;
+        font-size: 1.3vw;
+    }
+
+    #Nav .hover-text::after {
+        font-size: 1.3vw;
+    }
+
+    #Nav>.Main_menu>li>ul {
+        width: 100%;
+        height: 300px;
+    }
+
+    #Nav>.Main_menu>li>ul>li>a {}
+
+
+
+
+    #Nav>.Main_menu>li>ul>li>a {
+        font-size: 1.3vw;
+    }
+
+    #Nav>.Main_menu>li>ul>li>a.hover-text {}
+
+    #Nav>.Main_menu>li>ul>li>a.hover-text::after {
+        font-size: 1.3vw;
+    }
+
+    #Nav>.Main_menu>li>ul>li>a.hover-text:hover::after {}
+
+
+
+    .header>a {
+        /* 헤더 검색창 */
+        width: 75px;
+        height: 75px;
+        margin-top: 35px;
+    }
+
+    .header>a>img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .header>a>.naver {
+        top: -10px;
+        left: -225px;
+    }
+
+
+    /* .header--------------------------------*/
+    .rap {
+        width: 500%;
+    }
+
+
+    /* cont1 */
+    .conetents1 {
+        height: 700px;
+    }
+
+}
+
+/* max-width:1440px */
+
+@media(max-width:1340px) {
+    .footer nav .about>li:last-child {}
+
+
+
+
+}
+
+/* max-width:1340px */
+
+/* 노트북버전 */
+@media(max-width:1270px) {
+
+    #Nav>.Main_menu>li>ul>li>a.hover-text:hover::after {
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* footer 영역 */
+    .footer {
+        width: 100%;
+    }
+
+    .footer nav {
+        /* background-color: red; */
+        height: calc(100vw*0.24);
+    }
+
+    .footer nav ul {
+        /* height: calc(100vw*0.24); */
+        /* background-color: rgb(143, 219, 219); */
+    }
+
+    .footer nav h3 {
+        font-size: 2vw;
+    }
+
+    .footer nav ul li a {
+        font-size: 1.3vw;
+
+    }
+
+    .footer nav .about>li:nth-of-type(4) {
+        /* display: none; */
+    }
+
+    .footer section address {
+        font-size: 1.3vw;
+    }
+
+    .footer address p {
+        font-size: 1.3vw;
+    }
+
+
+}
+
+/* max-width:1270px */
+
+@media screen and (max-width: 1200px) {
+
+    /* cont1 */
+    .contents1 h3 {
+        font-size: 32px;
+    }
+
+    /* cont2 */
+    .contents2 h3 {
+        font-size: 32px;
+    }
+
+    /* cont3 */
+    .contents3 h3 {
+        font-size: 32px;
+    }
+
+
+
+
+    /* cont4 */
+    .contents4 img {
+        flex: 1 1 calc(33.333% - 8px);
+        /* 작은 화면에서 간격 조정 */
+        min-width: 120px;
+        /* 더 작은 화면에 맞게 최소 너비 조정 */
+    }
+
+    .contents4 h3 {
+        font-size: 32px;
+        /* 제목 크기 조정 */
+    }
+
+
+    /* cont5 */
+    .contents5 h3 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:1100px) {
+    .footer>h1 {
+        margin-top: 50px;
+    }
+}
+
+/* max-width:1024px */
+
+
+
+
+
+
+/* 노트북버전 */
+@media(max-width:1024px) {
+
+    /* header ------------------------------------*/
+
+    .header>h1 {
+        width: 250px;
+    }
+
+    .header>h1>a {
+        margin-top: 51px;
+    }
+
+    #Nav>.Main_menu>li>ul {
+        left: 0px;
+        height: 230px;
+    }
+
+    #Nav>.Main_menu>li>ul>li>a {
+        height: 35px;
+        line-height: 35px;
+        /* font-size: 20px; */
+    }
+
+    #Nav>.Main_menu>li>ul>li>a.hover-text::after {}
+
+    #Nav>.Main_menu>li>ul>li>a.hover-text:hover::after {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    .header>a {
+        /* 헤더 검색창 */
+        width: 45px;
+        height: 45px;
+        margin-top: 50px;
+    }
+
+    .header>a>img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .header>a>.naver {
+        top: -8px;
+        left: -190px;
+    }
+
+    .header>a>.naver>li.s_text>input {
+        width: 200px;
+        height: 30px;
+        font-size: 12px;
+        padding: 0 6px;
+    }
+
+    .header>a>.naver>li.s_btn>input {
+        width: 50px;
+        height: 30px;
+        right: -246px;
+    }
+
+    /* header ------------------------------------*/
+    .link select {
+        width: 100%;
+    }
+
+    .bar_btn {
+        display: none;
+    }
+
+    .slider2 .bar_btn2 {
+        display: none;
+    }
+
+
+}
+
+/* max-width:1024px */
+
+
+
+
+
+
+
+
+/* 노트북버전 */
+@media(max-width:985px) {
+    .rap {
+        width: 600%;
+    }
+
+}
+
+/* max-width:985px */
+
+
+
+
+
+
+/* 노트북버전 */
+@media(max-width:960px) {
+    #Nav>.Main_menu>li:last-child {
+        display: none;
+    }
+}/* max-width:960px */
+
+
+
+
+
+
+/* 테블릿 */
+@media(max-width:768px) {
+    .rap {
+        width: 700%;
+    }
+
+    /* .header-------------------------------- */
+    .header {
+        flex-wrap: wrap;
+        height: 110px;
+    }
+
+    .header>h1 {
+        width: 300px;
+        height: 50px;
+        padding-left: 10px;
+    }
+
+    .header>h1>a {
+        margin-top: 0px;
+    }
+
+    #Nav {
+        height: 50px;
+        margin-top: 10px;
+        order: 2;
+    }
+
+    #Nav>.Main_menu>li {
+        padding-top: 0;
+    }
+
+    #Nav>.Main_menu>li>ul {
+        top: 52px;
+    }
+
+    #Nav>.Main_menu>li>a {
+        font-size: 2.2vw;
+    }
+
+    #Nav .hover-text::after {
+        font-size: 2.2vw;
+    }
+
+    #Nav>.Main_menu>li>ul>li>a {
+        font-size: 2.2vw;
+    }
+
+
+    .header>a {
+        /* 헤더 검색창 */
+        width: 60px;
+        height: 60px;
+        margin-top: 0;
+        margin-right: 5px;
+    }
+
+    .header>a>img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header>a>.naver {
+        width: 247px;
+        height: 30px;
+        top: -40px;
+        left: -260px;
+    }
+
+    /* .header-------------------------------- */
+
+
+    /* cont1 */
+    .contents1 .timedeal {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contents1 .cont1_img {
+        height: 50%;
+    }
+
+    .contents1 .cont1_text {
+        height: 50%;
+    }
+
+
+    .contents1 h3 {
+        font-size: 28px;
+    }
+
+    .contents1>h3::before,
+    .contents1>h3::after {
+        width: 25%;
+    }
+
+    /* cont2 */
+    .contents2 {
+        height: 800px;
+    }
+
+    .contents2 h3 {
+        font-size: 28px;
+
+    }
+
+    .contents2>h3::before,
+    .contents2>h3::after {
+        width: 25%;
+    }
+
+    .rap .hover1 {
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        max-height: 250px;
+    }
+
+    .hover1 img {
+        width: 100%;
+    }
+
+        /* cont3 */
+        .contents3 h3 {
+            font-size: 28px;
+
+        }
+
+        .contents3>h3::before,
+        .contents3>h3::after {
+            width: 25%;
+        }
+/* 반응형: 작은 화면에서 세로 그리드로 변경 */
+
+        .contents3 ul {
+        grid-template-columns: 1fr;
+        /* 한 열로 세로 쌓임 */
+        grid-template-rows: repeat(6, 1fr);
+        /* 6개 아이템을 세로로 배치 */
+        height: auto;
+        /* 높이를 자동으로, 세로 확장에 맞게 */
+        max-height: 800px;
+        /*최소 화면 높이로 세로 스크롤 가능 */
+        transition: grid-template-rows var(--speed) var(--easing);
+        /* rows 전환 애니메이션 */
+    }
+
+    .contents3 li {
+        min-height: 100px;
+        /* 작은 화면에서 아이템 최소 높이 설정 */
+        width: 100%;
+        /* 전체 너비 차지 */
+    }
+
+    /* .contents3 li:nth-of-type(3),.contents3 li:nth-of-type(5) {
+        display: none;
+    } */
+
+    .contents3 article {
+        flex-direction: row;
+        /* 작은 화면에서 가로로 내용 배치 (선택적, 필요 시 조정) */
+    }
+
+    .contents3>h3::before,
+    .contents3>h3::after {
+        width: 40%;
+        /* 제목 선 길이 줄임 */
+    }
+
+    .contents3 h3 {
+        font-size: 32px;
+        /* 제목 크기 줄임 */
+    }
+
+
+        /* cont4 */
+
+        .contents4 img {
+            flex: 1 1 calc(33.333% - 6px);
+            /* 더 작은 간격 */
+            min-width: 100px;
+            /* 더 작은 최소 너비 */
+        }
+
+        .contents4 h3 {
+            font-size: 28px;
+        }
+
+        .contents4>h3::before,
+        .contents4>h3::after {
+            width: 25%;
+        }
+
+        
+        /* cont4 */
+        #lightbox.active {
+            width: 95%;
+            /* 작은 화면에서 더 넓게 */
+            padding: 15px;
+            max-width: 600px;
+        }
+
+        #lightbox figure figcaption h3 {
+            font-size: 24px;
+            /* 제목 크기 축소 */
+            margin: 10px 0;
+        }
+
+        #lightbox figure figcaption p {
+            font-size: 16px;
+            /* 텍스트 크기 축소 */
+            line-height: 1.6;
+        }
+
+        #lightbox figure figcaption:last-child p {
+            font-size: 14px;
+        }
+
+        #lightbox figure figcaption img {
+            width: 80%;
+            /* 작은 화면에서 이미지 크기 증가 */
+        }
+
+        #lightbox .indicator button {
+            width: 18px;
+            height: 18px;
+            line-height: 16px;
+            font-size: 14px;
+        }
+
+        #lightbox .btn_close {
+            width: 35px;
+            height: 35px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        /* cont5 */
+        .contents5 h3 {
+            font-size: 28px;
+
+        }
+
+        .contents5>h3::before,
+        .contents5>h3::after {
+            width: 25%;
+        }
+
+
+/* footer */
+        .footer>h1 {
+            margin-top: 100px;
+        }
+
+    }
+
+    /* max-width:768px */
+
+
+    @media(max-width:680px) {
+        .footer nav ul.gnbFoot>li:last-child {
+
+            display: none;
+        }
+
+        .contents5 {
+            height: 850px;
+        }
+
+
+    }
+
+    /* max-width:600px */
+
+
+
+
+    /* 핸드폰 */
+    @media(max-width:600px) {
+
+        /* .header-------------------------------- */
+        .header {
+            height: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-direction: row-reverse;
+        }
+
+        .header>h1 {
+            width: auto;
+            height: 60px;
+            padding: 0 15px;
+            line-height: 60px;
+        }
+
+        .header>h1>a {
+            margin-top: 10px;
+            height: 40px;
+        }
+
+        .header>h1>a>img {
+            width: 230px;
+            padding-top: 5px;
+        }
+
+        .hamburger-icon {
+            display: block;
+            width: 30px;
+            height: 25px;
+            position: absolute;
+            left: 15px;
+            top: 18px;
+            cursor: pointer;
+            z-index: 1000001;
+        }
+
+        .hamburger-icon span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #333;
+            margin-bottom: 5px;
+            transition: all 0.3s;
+        }
+
+
+
+        .hamburger-icon.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger-icon.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-icon.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        #Nav {
+            position: fixed;
+            bottom: 0;
+            left: -250px;
+            width: 200px;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: left 0.3s ease;
+            z-index: 1000000;
+            margin-top: 0;
+        }
+
+
+        #Nav.open {
+            left: 0;
+        }
+
+        #Nav>.Main_menu {
+            flex-direction: column;
+            padding-top: 80px;
+        }
+
+        #Nav>.Main_menu>li {
+            width: 100%;
+            padding-top: 0;
+            height: auto;
+        }
+
+        #Nav>.Main_menu>li>a {
+            font-size: 16px;
+        }
+
+        #Nav>.Main_menu>li>ul {
+            position: static;
+            background: none;
+            border: none;
+            padding: 10px 0;
+            height: auto;
+        }
+
+        #Nav>.Main_menu>li>ul>li>a {
+            color: orange;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        #Nav .hover-text::after,
+        #Nav .hover-text:hover::after,
+        #Nav .hover-text:hover {
+            content: none;
+            color: inherit;
+            border: none;
+            opacity: 1;
+        }
+
+        .header>a {
+            display: none;
+        }
+
+        /* .header-------------------------------- */
+
+
+        .rap {
+            width: 800%;
+        }
+
+
+
+    }
+
+    /* max-width:600px */
+
+
+
+
+
+
+
+    /* 삼성의 끝 핸드폰 */
+    @media(max-width:480px) {
+        .rap {
+            width: 1100%;
+        }
+
+
+        /* cont4 */
+        #lightbox.active {
+            width: 98%;
+            padding: 10px;
+            max-width: 400px;
+        }
+
+        #lightbox figure figcaption h3 {
+            font-size: 20px;
+        }
+
+        #lightbox figure figcaption p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        #lightbox figure figcaption:last-child p {
+            font-size: 12px;
+        }
+
+        #lightbox figure figcaption img {
+            width: 90%;
+            /* 모바일에서 이미지 크기 최대화 */
+        }
+
+        #lightbox .indicator button {
+            width: 16px;
+            height: 16px;
+            line-height: 14px;
+            font-size: 12px;
+        }
+
+        #lightbox .btn_close {
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .link select {
+            width: 100px;
+            font-size: 8px;
+        }
+
+
+        #marketingEmailType {
+
+            width: 90px
+        }
+    }
+
+
+
+
+
+
+    /* 애플의 끝 핸드폰 */
+    @media(max-width:320px) {
+
+        /* header---------------------------- */
+        .header {
+            height: 50px;
+        }
+
+        .header>h1 {
+            height: 50px;
+            padding: 0 10px;
+            line-height: 50px;
+        }
+
+        .header>h1>a {
+            height: 30px;
+        }
+
+        .header>h1>a>img {
+            width: 180px;
+            padding-top: 2.5px;
+        }
+
+        /* 햄버거 아이콘 */
+        .hamburger-icon {
+            width: 20px;
+            height: 16px;
+            top: 17px;
+        }
+
+        .hamburger-icon span {
+            height: 2px;
+            margin-bottom: 3px;
+        }
+
+        .hamburger-icon.open span:nth-child(1) {
+            transform: rotate(45deg) translate(3px, 3px);
+        }
+
+        .hamburger-icon.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(3px, -3px);
+        }
+
+        /* 네비게이션 메뉴 */
+        #Nav {
+            width: 180px;
+            left: -180px;
+        }
+
+        #Nav>.Main_menu {
+            padding-top: 60px;
+        }
+
+        #Nav>.Main_menu>li>a {
+            font-size: 14px;
+        }
+
+        #Nav>.Main_menu>li>ul>li>a {
+            font-size: 12px;
+        }
+
+        /* header---------------------------- */
+
+
+        .rap {
+            width: 1300%;
+        }
+
+
+    }

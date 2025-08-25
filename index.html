@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERRA MARKET</title>
+    <!-- <script src="https://cdn.skypack.dev/tweakpane@4.0.4"></script> -->
+    <link rel="icon" href="./images/hicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./js/script.js">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <div id="wrap">
+       <!-- header -->
+        <div id="header">
+            <div class="container">
+                <header class="header">
+                    <h1><a href="#"><img src="./images/cont2_logo.png" alt="로고이미지"></a></h1>
+
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav id="Nav"> <!--Nav, NavBg 영역-->
+                        <ul class="Main_menu">
+                            <li>
+                                <a href="#" class="hover-text" data-text="Shopping Home">쇼핑홈</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#" class="hover-text" data-text="View All Categories">전체 카테고리 보기</a>
+                                    </li>
+                                    <li><a href="#" class="hover-text" data-text="Today's Picks">오늘의 추천</a></li>
+                                    <li><a href="#" class="hover-text" data-text="New Stores">신규 입점 스토어</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Time Deals Today">오늘의 타임딜</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Card Discounts / Coupons">카드할인/쿠폰</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-text" data-text="Ride Studio">라이드스튜디오</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#" class="hover-text" data-text="Motorcycles">오토바이</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Bicycles">자전거</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Accessories">악세서리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-text" data-text="Beauty Lounge">뷰티라운지</a>
+                                <ul class="sub_menu">
+                                    <li><a href="./indexsub3.html" class="hover-text"
+                                            data-text="Body & Cleansing">바디·클렌징</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Skincare">스킨케어</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Makeup">메이크업</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Perfume & Diffusers">향수·디퓨저</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-text" data-text="Home Poem">홈포엠</a>
+                                <ul class="sub_menu">
+                                    <li><a href="./indexsub1.html" class="hover-text"
+                                            data-text="Bedroom Furniture">침실가구</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Living Room Furniture">거실가구</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Outdoor Furniture">야외가구</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Kids & Baby Furniture">유아동가구</a></li>
+                                    <li><a href="#" class="hover-text"
+                                            data-text="Student & Office Furniture">학생사무용가구</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-text" data-text="Electroom">일렉트룸</a>
+                                <ul class="sub_menu">
+                                    <li><a href="./indexsub2.html" class="hover-text"
+                                            data-text="TV & Visual Appliances">TV·영상가전</a>
+                                    </li>
+                                    <li><a href="#" class="hover-text" data-text="Refrigerators & Washers">냉장고·세탁기</a>
+                                    </li>
+                                    <li><a href="#" class="hover-text" data-text="Air Conditioners & Fans">에어컨·선풍기</a>
+                                    </li>
+                                    <li><a href="#" class="hover-text" data-text="Newlywed Packages">신혼패키지</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="hover-text" data-text="Customer Zone">고객참여존</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#" class="hover-text" data-text="Top Photo Reviews">포토리뷰 BEST</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Ask the Seller">셀러에게 묻기</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Review Events">사용 후기 이벤트</a></li>
+                                    <li><a href="#" class="hover-text" data-text="Tips by Category">카테고리별 팁</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#">
+                        <img src="./images/nav_icon.png" alt="검색창이미지">
+                        <ul class="naver">
+                            <li class="s_text">
+                                <input type="text" id="text" class="input_text" name="search" onkeydown="enterSearch()">
+                            </li>
+                            <li class="s_btn">
+                                <input type="button" value="검색" class="sch_smit" onclick="myFunction()">
+                            </li>
+                        </ul>
+                    </a>
+                </header><!-- .header -->
+            </div><!-- .container -->
+        </div><!-- #header -->
+
+
+        <!-- banner -->
+        <div id="banner">
+            <div class="container">
+                <div class="banner">
+                    <div class="slider1">
+                        <a href="./indexevent.html"><img src="./images/banner_001.png" alt="이미지1"></a>
+                        <div class="bar_btn">
+                            <div class="banner_sub">
+                                <div class="box1 boox">
+                                    <ol>
+                                        <li><img src="./images/banner_sub01.png" alt=" 배너서브이미지1" width="80%"></li>
+                                    </ol>
+                                </div>
+                                <div class="box2 boox">
+                                    <ol>
+                                        <li><img src="./images/banner_sub02.png" alt="배너서브이미지2"></li>
+                                    </ol>
+                                </div>
+                            </div><!-- .banner_sub -->
+                            <div class="b_sub">
+                                <div class="sub_btn">
+                                    <a href="javascript:;" class="btn ir_pm"><span>전체메뉴</span></a>
+                                </div>
+                            </div><!-- .b_sub -->
+                        </div><!-- .b_sub -->
+                    </div><!-- .bar_btn -->
+                    <div class="slider2">
+                       <a href="./indexevent.html"> <img src="./images/banner_002.png" alt="이미지2"></a>
+                        <div class="bar_btn2">
+                            <div class="banner_sub2">
+                                <div class="box3 boox">
+                                    <ol>
+                                        <li><img src="./images/banner2_sub01.png" alt=" 배너서브이미지3"></li>
+                                    </ol>
+                                </div>
+                                <div class="box4 boox">
+                                    <ol>
+                                        <li><img src="./images/banner2_sub02.png" alt="배너서브이미지4"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="b_sub2">
+                                <div class="sub_btn2">
+                                    <a href="javascript:;" class="btn ir_pm"><span>전체메뉴</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><img src="./images/banner_003.png" alt="이미지3"></div>
+                    <div><img src="./images/banner_004.png" alt="이미지4"></div>
+                    <div><img src="./images/banner_005.png" alt="이미지5"></div>
+                    <div><img src="./images/banner_006.png" alt="이미지5"></div>
+                </div><!-- .banner -->
+            </div><!-- .container -->
+        </div><!-- #banner -->
+
+        <!-- contents1 -->
+        <div id="contents1">
+            <div class="container">
+                <div class="contents1">
+                    <h3>Time Deals</h3>
+                    <div class="swiper my2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="timedeal cont1_1">
+                                    <a href="javascript:;" class="cont1_img"
+                                        onclick="addToCart('', './images/cont3_1.png')">
+                                        <img src="./images/cont3_1.png" alt="이솝화장품이미지">
+                                    </a>
+                                    <a href="javascript:;" class="cont1_text">
+                                        <div class="timer">24:00:00</div>
+                                        <h4>이솝 제라늄 리프 듀엣 - 단독특가</h4>
+                                        <p>바디 클렌징과 수분 공급을 위한 그린,시트러스,상쾌한 향이 돋보이는 제품 2종</p>
+                                        <h5>타임딜가 <span>175,000원</span><strong>160,000원</strong></h5>
+                                        <p>무료배송 │ 20개남음 │ Terra추천상품</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timedeal cont1_2">
+                                    <a href="javascript:;" class="cont1_img"
+                                        onclick="addToCart('', './images/cont3_2.png')">
+                                        <img src="./images/cont3_2.png" alt="옐로우체어이미지">
+                                    </a>
+                                    <a href="javascript:;" class="cont1_text">
+                                        <div class="timer">24:00:00</div>
+                                        <h4>선데이 옐로우 체어 - 단독특가</h4>
+                                        <p>벨벳 패브릭과 고밀도 쿠션으로 만든 내추럴 오크 원목 체어</p>
+                                        <h5>타임딜가 <span>189,000원</span><strong>129,000원</strong></h5>
+                                        <p>무료배송 │ 64개남음 │ 3개 이상 구매 시 추가 5% 할인</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timedeal cont1_3">
+                                    <a href="javascript:;" class="cont1_img"
+                                        onclick="addToCart('', './images/cont3_3.png')">
+                                        <img src="./images/cont3_3.png" alt="미니자판기냉장고이미지">
+                                    </a>
+                                    <a href="javascript:;" class="cont1_text">
+                                        <div class="timer">24:00:00</div>
+                                        <h4>레트로 코카콜라 미니 자판기 냉장고 - 단독특가</h4>
+                                        <p>냉장/보온 겸용, 6캔 수납 가능한 이동식 미니 냉장고(USB/차량용 어댑터 지원)</p>
+                                        <h5>타임딜가 <span>1,099,000원</span><strong>1,074,000원</strong></h5>
+                                        <p>무료배송 │ 1개남음 │ MD 추천</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timedeal cont1_4">
+                                    <a href="javascript:;" class="cont1_img"
+                                        onclick="addToCart('', './images/cont3_4.png')">
+                                        <img src="./images/cont3_4.png" alt="카와사키닌자이미지">
+                                    </a>
+                                    <a href="javascript:;" class="cont1_text">
+                                        <div class="timer">24:00:00</div>
+                                        <h4>카와사키 닌자 H2R - 단독특가</h4>
+                                        <p>슈퍼차저 엔진으로 무장한 카와사키의 플래그십 레이스 바이크</p>
+                                        <h5>타임딜가 <span>65,000,000원</span><strong>59,000,000원</strong></h5>
+                                        <p>프리미엄 화물 배송 포함 │ 3대남음 │ 구매 시 전용 알루미늄 스탠드 & 커버 증정</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div><!-- .contents1 -->
+            </div><!-- .container -->
+        </div><!-- contents1 -->
+
+        <!-- contents2 -->
+        <div id="contents2">
+            <div class="container">
+                <div class="contents2">
+                    <h3 class="con2_logo">Special Price</h3>
+                    <div class="rap scrolling">
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_001.png')">
+                                <img src="./images/cont2_001.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_001.png')">
+                                <img src="./images/cont2_back001.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_002.png')">
+                                <img src="./images/cont2_002.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_002.png')">
+                                <img src="./images/cont2_back002.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_003.png')">
+                                <img src="./images/cont2_003.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_003.png')">
+                                <img src="./images/cont2_back003.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_004.png')">
+                                <img src="./images/cont2_004.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_004.png')">
+                                <img src="./images/cont2_back004.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_005.png')">
+                                <img src="./images/cont2_005.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_005.png')">
+                                <img src="./images/cont2_back005.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_006.png')">
+                                <img src="./images/cont2_006.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_006.png')">
+                                <img src="./images/cont2_back006.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_007.png')">
+                                <img src="./images/cont2_007.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_007.png')">
+                                <img src="./images/cont2_back007.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_008.png')">
+                                <img src="./images/cont2_008.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_008.png')">
+                                <img src="./images/cont2_back008.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_009.png')">
+                                <img src="./images/cont2_009.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_009.png')">
+                                <img src="./images/cont2_back009.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_010.png')">
+                                <img src="./images/cont2_010.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_010.png')">
+                                <img src="./images/cont2_back0010.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_011.png')">
+                                <img src="./images/cont2_011.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_011.png')">
+                                <img src="./images/cont2_back0011.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_012.png')">
+                                <img src="./images/cont2_012.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_012.png')">
+                                <img src="./images/cont2_back0012.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover1">
+                            <div class="front" onclick="addToCart('', './images/cont2_013.png')">
+                                <img src="./images/cont2_013.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_013.png')">
+                                <img src="./images/cont2_back0013.png" alt="이미지1">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="rap scrolling2">
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_014.png')">
+                                <img src="./images/cont2_014.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_014.png')">
+                                <img src="./images/cont2_back0014.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_015.png')">
+                                <img src="./images/cont2_015.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_015.png')">
+                                <img src="./images/cont2_back0015.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_016.png')">
+                                <img src="./images/cont2_016.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_016.png')">
+                                <img src="./images/cont2_back0016.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_017.png')">
+                                <img src="./images/cont2_017.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_017.png')">
+                                <img src="./images/cont2_back0017.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_018.png')">
+                                <img src="./images/cont2_018.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_018.png')">
+                                <img src="./images/cont2_back0018.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_019.png')">
+                                <img src="./images/cont2_019.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_019.png')">
+                                <img src="./images/cont2_back0019.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_020.png')">
+                                <img src="./images/cont2_020.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_020.png')">
+                                <img src="./images/cont2_back0020.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_021.png')">
+                                <img src="./images/cont2_021.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_021.png')">
+                                <img src="./images/cont2_back0021.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_022.png')">
+                                <img src="./images/cont2_022.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_022.png')">
+                                <img src="./images/cont2_back0022.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_023.png')">
+                                <img src="./images/cont2_023.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_023.png')">
+                                <img src="./images/cont2_back0023.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_024.png')">
+                                <img src="./images/cont2_024.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_024.png')">
+                                <img src="./images/cont2_back0024.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_025.png')">
+                                <img src="./images/cont2_025.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_025.png')">
+                                <img src="./images/cont2_back0025.png" alt="이미지1">
+                            </div>
+                        </div>
+                        <div class="hover2">
+                            <div class="front" onclick="addToCart('', './images/cont2_026.png')">
+                                <img src="./images/cont2_026.png" alt="이미지1">
+                            </div>
+                            <div class="back" onclick="addToCart('', './images/cont2_026.png')">
+                                <img src="./images/cont2_back0026.png" alt="이미지1">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .contents2 -->
+            </div><!-- .container -->
+        </div><!-- contents2 -->
+
+        <!-- contents3 -->
+        <div id="contents3">
+            <div class="container">
+                <div class="contents3">
+                    <h3 class="title">Terra's Pick</h3>
+                    <ul>
+                        <li data-active="true">
+                            <article class="Motor">
+                                <img src="./images/cont1_01.jpg" alt="" />
+                            </article>
+                        </li>
+                        <li>
+                            <article class="Motor">
+                                <img src="./images/cont1_02.jpg" alt="" />
+                            </article>
+                        </li>
+                        <li>
+                            <article class="Motor">
+                                <img src="./images/cont1_03.png" alt="" />
+                            </article>
+                        </li>
+                        <li>
+                            <article class="Motor">
+                                <img src="./images/cont1_04.jpg" alt="" />
+                            </article>
+                        </li>
+                        <li>
+                            <article class="Motor">
+                                <img src="./images/cont1_05.jpg" alt="" />
+                            </article>
+                        </li>
+                        <li>
+                            <article class="Motor">
+                                <img src="./images/cont1_06.jpg" alt="" />
+                            </article>
+                        </li>
+                    </ul>
+                </div><!-- .contents3 -->
+            </div><!-- .container -->
+        </div><!-- #contents3 -->
+
+
+
+        <!-- contents4 -->
+        <div id="contents4">
+            <div class="container">
+                <div class="contents4">
+                    <h3 class="title">Why? Terra!</h3>
+                    <div class="image-container">
+                        <img src="./images/cont4_box1.png" alt="사야하는이유이미지1" onclick="lightbox_open(1)">
+                    <img src="./images/cont4_box2.png" alt="사야하는이유이미지2" onclick="lightbox_open(2)">
+                    <img src="./images/cont4_box3.png" alt="사야하는이유이미지3" onclick="lightbox_open(3)">
+                    <img src="./images/cont4_box4.png" alt="사야하는이유이미지4" onclick="lightbox_open(4)">
+                    <img src="./images/cont4_box5.png" alt="사야하는이유이미지5" onclick="lightbox_open(5)">
+                    <img src="./images/cont4_box6.png" alt="사야하는이유이미지6" onclick="lightbox_open(6)">
+
+                    </div>
+                    
+                </div><!-- .contents4 -->
+
+                <div id="block"></div>
+
+                <div id="lightbox">
+                    <figure>
+                        <figcaption class="active">
+                            <h3>트렌디한 모든 것이 있는 곳, Terra</h3>
+                            <p>원하는 것이 있다면,<br>
+                                복잡한 검색 대신 Terra의 스마트 검색창에 간단히 입력해보세요.<br>
+                                놀랍도록 정확한 결과를 만나게 됩니다.</p>
+                            <img src="./images/cont4_box1.png" alt="사야하는이유이미지1">
+                        </figcaption>
+                        <figcaption>
+                            <h3>가성비를 넘어, 가치 있는 소비</h3>
+                            <p>단순히 저렴하기만 한 제품은 Terra에 없습니다.<br>
+                                검증된 품질의 상품만을 엄선하고, 유통 구조는 간결하게.<br>
+                                그 결과, 가격은 가벼워지고 품질은 한층 더 무게를 갖췄습니다.<br></p>
+                            <img src="./images/cont4_box2.png" alt="사야하는이유이미지2">
+                        </figcaption>
+                        <figcaption>
+                            <h3>오늘 주문, 내일 도착</h3>
+                            <p>오늘 주문하면, 내일 도착합니다.<br>
+                                Terra 익스프레스는 신뢰할 수 있는 당일 출고 시스템으로<br>
+                                중요한 일정이 있는 날에도 안심하고 쇼핑하실 수 있습니다.<br></p>
+                            <img src="./images/cont4_box3.png" alt="사야하는이유이미지3">
+                        </figcaption>
+                        <figcaption>
+                            <h3>당신의 취향, Terra는 압니다</h3>
+                            <p>취향 기반 추천부터 상세한 리뷰까지,<br>
+                                Terra는 쇼핑 전 고민을 줄여주고 결정은 더 쉽게 만들어줍니다.<br>
+                                필요했던 순간에 꼭 맞는 제안, Terra에서는 흔한 일입니다.<br></p>
+                            <img src="./images/cont4_box4.png" alt="사야하는이유이미지4">
+                        </figcaption>
+                        <figcaption>
+                            <h3>가입, 첫 구매… 쇼핑의 순간마다 보상이 따라옵니다.</h3>
+                            <p>회원가입 시 다양한 쿠폰과 할인, 생일 혜택, 리뷰 적립금까지 제공됩니다.<br>
+                                자주 찾을수록 혜택은 더욱 풍성해지고, 더 특별한 보상이 따릅니다.<br>
+                                쇼핑의 즐거움에 더해지는 Terra만의 보너스를 경험해보세요.<br></p>
+                            <img src="./images/cont4_box5.png" alt="사야하는이유이미지5">
+                        </figcaption>
+                        <figcaption>
+                            <h3>따뜻한 연결, Terra에서는 매일 일어납니다.</h3>
+                            <p>Terra에는 신생 브랜드부터 전통 있는 소상공인까지 다양한 셀러가 함께합니다.<br>
+                                작은 구매 하나가 누군가에겐 “첫 주문”이라는 특별한 순간이 되기도 하죠.<br>
+                                당신의 선택이 누군가에게 응원이 되는 경험, Terra에서 시작됩니다..<br></p>
+                            <img src="./images/cont4_box6.png" alt="사야하는이유이미지6">
+                        </figcaption>
+                    </figure>
+
+                    <div class="indicator">
+                        <button onclick="change_img(this.innerHTML)">1</button>
+                        <button onclick="change_img(this.innerHTML)">2</button>
+                        <button onclick="change_img(this.innerHTML)">3</button>
+                        <button onclick="change_img(this.innerHTML)">4</button>
+                        <button onclick="change_img(this.innerHTML)">5</button>
+                        <button onclick="change_img(this.innerHTML)">6</button>
+                    </div>
+
+                    <div class="btn_close" onclick="lightbox_close()">X</div>
+                </div>
+            </div><!-- .container -->
+        </div><!-- contents4 -->
+
+
+        <!-- contents5 -->
+        <div id="contents5">
+            <div class="container">
+                <div class="contents5">
+                    <h3>All Categories</h3>
+                    <section class="sec1">
+                        <div class="swiper swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_01.png')"><img
+                                        src="./images/cont5_01.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_02.png')"><img
+                                        src="./images/cont5_02.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_03.png')"><img
+                                        src="./images/cont5_03.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_04.png')"><img
+                                        src="./images/cont5_04.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_05.png')"><img
+                                        src="./images/cont5_05.png" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_06.png')"><img
+                                        src="./images/cont5_06.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_07.png')"><img
+                                        src="./images/cont5_07.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_08.png')"><img
+                                        src="./images/cont5_08.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_09.png')"><img
+                                        src="./images/cont5_09.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_10.png')"><img
+                                        src="./images/cont5_10.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="swiper swiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_11.png')"><img
+                                        src="./images/cont5_11.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_12.png')"><img
+                                        src="./images/cont5_12.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_13.png')"><img
+                                        src="./images/cont5_13.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_14.png')"><img
+                                        src="./images/cont5_14.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_15.png')"><img
+                                        src="./images/cont5_15.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="swiper swiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_16.png')"><img
+                                        src="./images/cont5_16.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_17.png')"><img
+                                        src="./images/cont5_17.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_18.png')"><img
+                                        src="./images/cont5_18.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_19.png')"><img
+                                        src="./images/cont5_19.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_20.png')"><img
+                                        src="./images/cont5_20.png" alt=""></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sec2">
+                        <div class="swiper swiper5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_01.png')"><img
+                                        src="./images/cont5_2_01.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_02.png')"><img
+                                        src="./images/cont5_2_02.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_03.png')"><img
+                                        src="./images/cont5_2_03.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_04.png')"><img
+                                        src="./images/cont5_2_04.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_05.png')"><img
+                                        src="./images/cont5_2_05.png" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="swiper swiper6">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_06.png')"><img
+                                        src="./images/cont5_2_06.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_07.png')"><img
+                                        src="./images/cont5_2_07.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_08.png')"><img
+                                        src="./images/cont5_2_08.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_09.png')"><img
+                                        src="./images/cont5_2_09.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_010.png')"><img
+                                        src="./images/cont5_2_010.png" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                        <div class="swiper swiper7">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_011.png')"><img
+                                        src="./images/cont5_2_011.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_012.png')"><img
+                                        src="./images/cont5_2_012.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_013.png')"><img
+                                        src="./images/cont5_2_013.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_014.png')"><img
+                                        src="./images/cont5_2_014.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_015.png')"><img
+                                        src="./images/cont5_2_015.png" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                        <div class="swiper swiper8">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_016.png')"><img
+                                        src="./images/cont5_2_016.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_017.png')"><img
+                                        src="./images/cont5_2_017.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_018.png')"><img
+                                        src="./images/cont5_2_018.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_019.png')"><img
+                                        src="./images/cont5_2_019.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_020.png')"><img
+                                        src="./images/cont5_2_020.png" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                        <div class="swiper swiper9">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_025.png')"><img
+                                        src="./images/cont5_2_025.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_024.png')"><img
+                                        src="./images/cont5_2_024.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_023.png')"><img
+                                        src="./images/cont5_2_023.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_022.png')"><img
+                                        src="./images/cont5_2_022.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_021.png')"><img
+                                        src="./images/cont5_2_021.png" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                        <div class="swiper swiper10">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_026.png')"><img
+                                        src="./images/cont5_2_026.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_027.png')"><img
+                                        src="./images/cont5_2_027.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_028.png')"><img
+                                        src="./images/cont5_2_028.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_029.png')"><img
+                                        src="./images/cont5_2_029.png" alt=""></div>
+                                <div class="swiper-slide" onclick="addToCart('', './images/cont5_2_030.png')"><img
+                                        src="./images/cont5_2_030.png" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </section>
+                </div><!-- .contents5 -->
+            </div><!-- .container -->
+        </div><!-- contents5 -->
+
+
+        <!-- 장바구니 -->
+        <div id="cart">
+            <h2>My Cart
+                <img src="./images/ani_cart.gif" alt="">
+            </h2>
+            <div id="cart-items"></div>
+        </div>
+
+
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer">
+                    <h1>
+                        <a href="./sub_joy.html"><img src="./images/f_logo.png" alt=""></a>
+                    </h1>
+                    <a href="#">
+                        <div id="quick"><button type="button" class="ico">TOP</button></div>
+                    </a>
+                    <nav>
+                        <ul class="gnbFoot">
+                            <li>
+                                <h3>Our Company</h3>
+                                <ul>
+                                    <li><a href="javascript:;">TERRA 유니버스</a></li>
+                                    <li><a href="javascript:;">TERRA 역사</a></li>
+                                    <li><a href="javascript:;">TERRA 브랜드</a></li>
+                                    <li><a href="javascript:;">TERRA 뉴스룸</a></li>
+                                    <li><a href="javascript:;">TERRA 대외사업부</a></li>
+                                    <li><a href="javascript:;">TERRA 아카데미</a></li>
+                                    <li><a href="javascript:;">TERRA ESG 경영</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>For Guests</h3>
+                                <ul>
+                                    <li><a href="javascript:;">상품검색/배송예약</a></li>
+                                    <li><a href="javascript:;">다이닝 검색/예약</a></li>
+                                    <li><a href="javascript:;">패키지/프로모션</a></li>
+                                    <li><a href="javascript:;">TERRA 고객센터</a></li>
+                                    <li><a href="javascript:;">예약확인</a></li>
+                                    <li><a href="javascript:;">온라인 결제</a></li>
+                                    <li><a href="javascript:;" target="_blank">TERRA 스토어</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Membership</h3>
+                                <ul>
+                                    <li><a href="javascript:;">멤버십 종합안내</a></li>
+                                    <li><a href="javascript:;">TERRA 리워즈</a></li>
+                                    <li><a href="javascript:;">TERRA MARKET 클럽</a></li>
+                                    <li><a href="javascript:;">TERRA STAR VIP 서비스</a></li>
+                                    <li><a href="javascript:;">마이 TERRA</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="about clearfix">
+                            <li><a href="javascript:;">개인정보처리방침</a></li>
+                            <li><a href="javascript:;">이용약관</a></li>
+                            <li><a href="javascript:void(0);">사이트맵</a></li>
+                            <li><a href="javascript:;">인재채용</a></li>
+                            <li><a href="javascript:;">윤리경영</a></li>
+                            <li><a href="javascript:void(0);" class="popMarketing"><strong>제휴문의</strong></a></li>
+                            <li><a href="javascript:;">상품권</a></li>
+                        </ul>
+                    </nav>
+                    <section>
+                        <address>
+                            <dl class="contact">
+                                <dt>대표번호</dt>
+                                <dd>1234-5678</dd>
+                            </dl>
+                            <dl class="addr clearfix">
+                                <dt>법인명 </dt>
+                                <dd>TERRA MARKET</dd>
+                                <dt>대표이사 </dt>
+                                <dd>도가경 김기쁨 조현성 한동훈</dd>
+                                <dt>사업자등록번호</dt>
+                                <dd>123-45-56789</dd>
+                                <dt>통신판매 신고번호</dt>
+                                <dd>제 몇호 몇호 몇호</dd>
+                                <dt>주소</dt>
+                                <dd>12345 서울특별시 강서구 화곡동 1004번지</dd>
+                            </dl>
+                            <p>COPYRIGHT 8201 TERRA NETWORKS CO., LTD. TERRA MOUNTAIN ALL RIGHTS RESERVED.</p>
+                            <div class="link">
+                                <select name="quickLink" id="quickLink" class="links"
+                                    onChange="if(this.value) window.open(this.value); sendGAAttrEvent(event);"
+                                    title="관련사이트 새창열림" event_name="click_event" ep_button_area="footer"
+                                    ep_button_name="QUICK LINK">
+                                    <option>QUICK LINK</option>
+                                    <option value="https://www.amazon.com/">Amazon</option>
+                                    <option value="https://www.coupang.com/">쿠팡</option>
+                                    <option value="https://shinsegaemall.ssg.com/">신세계 SSG</option>
+                                    <option value="https://www.walmart.com/">Walmart</option>
+                                </select>
+                            </div>
+                            
+                        </address>
+                    </section>
+                </div><!-- .footer -->
+            </div><!-- .container -->
+        </footer>
+
+
+        <!-- 마케팅 제휴 팝업 -->
+        <div id="popMarketing" class="popup">
+            <form name="marketingForm" id="marketingForm" method="post" onsubmit="return false;">
+                <input type="hidden" id="marketingQaCode" name="marketingQaCode" value="MK">
+                <input type="hidden" id="marketingEmail" name="marketingEmail">
+                <fieldset>
+                    <h2>마케팅 제휴</h2>
+                    <section class="marketing">
+                        <h3>MARKETING PARTNERSHIPS</h3>
+                        <p class="subtxt">TERRA MARKET과의 제휴를 통한 시너지 창출을 원하시는 경우 <br>다음의 양식을 작성 후 등록해 주시기
+                            바랍니다.
+                        </p>
+                        <dl class="regist">
+                            <dt><label for="marketingName" class="ess">담당자 이름</label></dt>
+                            <dd id="marketingNameChk">
+                                <input type="text" name="marketingName" id="marketingName" title="이름 입력"
+                                    placeholder="이름 입력" maxlength="20">
+                                <p class="error" id="maketringNameError"></p>
+                            </dd>
+                            <dt><label for="marketingEmailID" class="ess">담당자 이메일</label></dt>
+                            <dd class="trisection" id="marketingEmailChk">
+                                <ol class="check">
+                                    <li>
+                                        <input type="text" name="marketingEmailID" id="marketingEmailID"
+                                            title="이메일 아이디 입력" maxlength="20">
+                                    </li>
+                                    <li class="at"> &nbsp;@</li>
+                                    <li><input type="text" name="marketingEmailUrl" id="marketingEmailUrl"
+                                            class="marketingEmailUrl" title="이메일주소 입력" maxlength="20"></li>
+                                    <li>
+                                        <select name="marketingEmailType" id="marketingEmailType" class="option01 st03">
+                                            <option value="userWrite">직접입력</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="hanmail.net">hanmail.net</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="hotmail.com">hotmail.com</option>
+                                        </select>
+                                    </li>
+                                </ol>
+                                <p class="error" id="marketingEmailError"></p>
+                            </dd>
+                            <dt><label for="marketingPhoneNo" class="ess">담당자 연락처</label></dt>
+                            <dd id="marketingPhoneNoChk">
+                                <input type="tel" name="marketingPhoneNo" id="marketingPhoneNo"
+                                    placeholder="- 없이 입력해 주세요." maxlength="11">
+                                <p class="error" id="marketingPhoneError"></p>
+                            </dd>
+                            <dt><label for="marketingBrandName">브랜드명</label></dt>
+                            <dd><input type="text" name="marketingBrandName" id="marketingBrandName"></dd>
+                            <dt><label for="marketingQuestion" class="ess">문의내용</label></dt>
+                            <dd id="marketingQuestionChk">
+                                <textarea name="marketingQuestion" id="marketingQuestion" rows="4"
+                                    wrap="virtual"></textarea>
+                                <p class="mgT15 error" id="marketingQuestionError"></p>
+                            </dd>
+                        </dl>
+
+                        <div class="btnC">
+                            <button type="submit" class="btn base st05 em02" id="submitMarketing">문의
+                                등록</button>
+                        </div>
+                        <button type="button" class="ico close st04" onClick="$.removeMask('popMarketing');">닫기</button>
+                    </section>
+                </fieldset>
+            </form>
+        </div><!-- popMarketing -->
+    </div><!-- wrap -->
+
+
+
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slick.js"></script>
+
+    <!-- <script>
+  const colors = [
+    ['#ff9a9e', '#fad0c4'],
+    ['#a1c4fd', '#c2e9fb'],
+    ['#fbc2eb', '#a6c1ee'],
+    ['#ffecd2', '#fcb69f'],
+    ['#d4fc79', '#96e6a1']
+  ];
+
+  let i = 0;
+
+  function changeBackground() {
+    const [start, end] = colors[i];
+    document.body.style.background = `linear-gradient(135deg, ${start}, ${end})`;
+    i = (i + 1) % colors.length;
+  }
+
+  // 초기 실행
+  changeBackground();
+
+  // 5초마다 배경 색상 전환
+  setInterval(changeBackground, 5000);
+</script> -->
+
+    <script>
+        // 검색창
+        const s_icon = $(".header > a > img");
+        const s_text = $(".naver");
+
+        s_text.hide();
+        s_icon.click(function (e) {
+            e.preventDefault();
+            s_text.slideToggle();
+        })
+
+        function enterSearch() {
+            if (event.keyCode == 13) {
+                myFunction();
+            }
+        }
+        function myFunction() {
+            let x = document.getElementById("text").value;
+            window.location.href = "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=" + x;
+        }
+
+
+      //nav 영역
+function setupDesktopMenu() {
+    // 모든 서브메뉴 숨기기 (초기화)
+    $("#Nav > .Main_menu > li > .sub_menu").hide();
+
+    // 이전에 등록된 모바일 메뉴 클릭 이벤트를 제거합니다.
+    $("#Nav > .Main_menu > li > a").off("click");
+
+    // 데스크톱 메뉴의 mouseover/mouseout 이벤트를 등록합니다.
+    $("#Nav > .Main_menu > li").on("mouseover", function () {
+        $(".sub_menu").stop().slideDown(300);
+    });
+    $("#Nav > .Main_menu > li").on("mouseout", function () {
+        $(".sub_menu").stop().slideUp(300);
+    });
+}
+
+// 뷰포트 너비가 600px 이하일 때의 모바일 메뉴 동작을 정의하는 함수
+function setupMobileMenu() {
+    // 모든 서브메뉴 숨기기 (초기화)
+    $("#Nav > .Main_menu > li > .sub_menu").hide();
+
+    // 이전에 등록된 데스크톱 메뉴 이벤트를 제거합니다.
+    $("#Nav > .Main_menu > li").off("mouseover mouseout");
+
+    // 모바일 메뉴의 클릭 이벤트를 등록합니다.
+    $("#Nav > .Main_menu > li > a").on("click", function (e) {
+        e.preventDefault(); // 링크 이동 막기
+
+        const $clickedSubMenu = $(this).siblings(".sub_menu");
+
+        // 클릭한 서브메뉴가 이미 열려있는지 확인
+        if ($clickedSubMenu.is(":visible")) {
+            // 열려있다면 닫기
+            $clickedSubMenu.stop().slideUp(300);
+        } else {
+            // 닫혀있다면, 모든 다른 서브메뉴를 닫고 클릭한 서브메뉴 열기 (아코디언 효과)
+            $("#Nav > .Main_menu > li > .sub_menu").not($clickedSubMenu).slideUp(300);
+            $clickedSubMenu.stop().slideDown(300);
+        }
+    });
+}
+
+// 뷰포트 너비에 따라 메뉴 이벤트를 설정하는 함수
+function handleMediaChange(e) {
+    if (e.matches) {
+        // 600px 이하일 때: 모바일 메뉴 설정
+        setupMobileMenu();
+    } else {
+        // 600px 초과일 때: 데스크톱 메뉴 설정
+        setupDesktopMenu();
+    }
+}
+
+// 햄버거 메뉴 토글 로직
+$(document).ready(function () {
+    $(".hamburger-icon").click(function () {
+        $("#Nav").toggleClass("open");
+        $(this).toggleClass("open");
+    });
+
+    // matchMedia 리스너 등록 및 초기 실행
+    const mediaQuery = window.matchMedia('(max-width: 600px)');
+    mediaQuery.addEventListener('change', handleMediaChange);
+
+    // 페이지 로드 시 초기 상태를 한 번 실행합니다.
+    handleMediaChange(mediaQuery);
+});
+
+        // //nav 영역
+        // function setupDesktopMenu() {
+        //     // 모든 서브메뉴 숨기기 (초기화)
+        //     $("#Nav > .Main_menu > li > .sub_menu").hide();
+
+        //     // 이전에 등록된 모바일 메뉴 클릭 이벤트를 제거합니다.
+        //     // 이는 모바일에서 데스크톱으로 전환할 때 충돌을 방지합니다.
+        //     $("#Nav > .Main_menu > li > a").off("click");
+
+        //     // 데스크톱 메뉴의 mouseover/mouseout 이벤트를 등록합니다.
+        //     $("#Nav > .Main_menu > li").on("mouseover", function () {
+        //         $(".sub_menu").stop().slideDown(300);
+        //     });
+        //     $("#Nav > .Main_menu > li").on("mouseout", function () {
+        //         $(".sub_menu").stop().slideUp(300);
+        //     });
+        // }
+
+        // // 뷰포트 너비가 600px 이하일 때의 모바일 메뉴 동작을 정의하는 함수
+        // function setupMobileMenu() {
+        //     // 모든 서브메뉴 숨기기 (초기화)
+        //     $("#Nav > .Main_menu > li > .sub_menu").hide();
+
+        //     // 이전에 등록된 데스크톱 메뉴 이벤트를 제거합니다.
+        //     // 이는 데스크톱에서 모바일로 전환할 때 충돌을 방지합니다.
+        //     $("#Nav > .Main_menu > li").off("mouseover mouseout");
+
+        //     // 모바일 메뉴의 클릭 이벤트를 등록합니다.
+        //     $("#Nav > .Main_menu > li > a").on("click", function (e) {
+        //         e.preventDefault();
+        //         $(this).siblings(".sub_menu").stop().slideToggle(300);
+        //     });
+        // }
+
+        // // 뷰포트 너비에 따라 메뉴 이벤트를 설정하는 함수
+        // function handleMediaChange(e) {
+        //     if (e.matches) {
+        //         // 600px 이하일 때: 모바일 메뉴 설정
+        //         setupMobileMenu();
+        //     } else {
+        //         // 600px 초과일 때: 데스크톱 메뉴 설정
+        //         setupDesktopMenu();
+        //     }
+        // }
+
+        // // 햄버거 메뉴 토글 로직
+        // $(document).ready(function () {
+        //     $(".hamburger-icon").click(function () {
+        //         $("#Nav").toggleClass("open");
+        //         $(this).toggleClass("open");
+        //     });
+
+        //     // matchMedia 리스너 등록 및 초기 실행
+        //     const mediaQuery = window.matchMedia('(max-width: 600px)');
+
+        //     // 권장되는 addEventListener를 사용합니다.
+        //     mediaQuery.addEventListener('change', handleMediaChange);
+
+        //     // 페이지 로드 시 초기 상태를 한 번 실행합니다.
+        //     handleMediaChange(mediaQuery);
+        // });
+
+
+        //banner 영역
+        $('.banner').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 1000,
+        });
+        $(".sub_btn > .btn").click(function () {
+    $(".banner_sub .box1, .banner_sub .box2").fadeToggle(); // .box1과 .box2만 토글
+    $(this).toggleClass("on");
+});
+
+$(".sub_btn2 > .btn").click(function () {
+    $(".banner_sub2 .box3, .banner_sub2 .box4").fadeToggle(); // .box3과 .box4만 토글
+    $(this).toggleClass("on");
+});
+
+        // 장바구니 영역
+        function addToCart(name, imageUrl) {
+            const cartItems = document.getElementById('cart-items');
+            const cartItem = document.createElement('div');
+            cartItem.className = 'cart-item';
+            cartItem.innerHTML = `
+                <img src="${imageUrl}" alt="${name}">
+                <span>${name}</span>
+            `;
+            // 장바구니 항목 클릭 시 제거
+            cartItem.onclick = function () {
+                cartItems.removeChild(cartItem);
+            };
+            cartItems.appendChild(cartItem);
+        }
+
+
+        // contents1 영역
+        new Swiper(".my2", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+
+        let seconds = 86400;
+
+        function formatTime(sec) {
+            let hrs = Math.floor(sec / 3600);
+            let mins = Math.floor((sec % 3600) / 60);
+            let secs = sec % 60;
+
+            return (
+                (hrs < 10 ? "0" + hrs : hrs) + ":" +
+                (mins < 10 ? "0" + mins : mins) + ":" +
+                (secs < 10 ? "0" + secs : secs)
+            );
+        }
+
+        setInterval(function () {
+            seconds--;
+            $(".timer").text(formatTime(seconds));
+        }, 1000);
+
+
+// contents3 영역
+const list = document.querySelector('.contents3 > ul');
+const items = list.querySelectorAll('.contents3 > ul > li');
+
+const setIndex = (event) => {
+    const closest = event.target.closest('.contents3 > ul > li');
+    if (closest) {
+        const index = [...items].indexOf(closest);
+        const isMobile = window.innerWidth <= 768; // 768px 이하를 모바일로 간주
+
+        // 아이템 활성화 설정
+        items.forEach((item, i) => {
+            item.dataset.active = (index === i).toString();
+        });
+
+        // 화면 크기에 따라 columns 또는 rows 변경
+        if (isMobile) {
+            // 작은 화면: 세로 확장 (grid-template-rows)
+            const rows = new Array(items.length)
+                .fill()
+                .map((_, i) => (index === i ? '4fr' : '1fr'))
+                .join(' ');
+            list.style.gridTemplateRows = rows;
+            list.style.gridTemplateColumns = '1fr'; // 한 열 유지
+        } else {
+            // 큰 화면: 가로 확장 (grid-template-columns)
+            const cols = new Array(items.length)
+                .fill()
+                .map((_, i) => (index === i ? '10fr' : '1fr'))
+                .join(' ');
+            list.style.gridTemplateColumns = cols;
+            list.style.gridTemplateRows = ''; // rows 초기화
+        }
+    }
+};
+
+list.addEventListener('focus', setIndex, true);
+list.addEventListener('click', setIndex);
+list.addEventListener('pointermove', setIndex);
+
+const resync = () => {
+    const w = Math.max(
+        ...[...items].map((i) => i.offsetWidth)
+    );
+    list.style.setProperty('--article-width', w);
+};
+
+window.addEventListener('resize', resync);
+resync();
+
+// 추가: 리사이즈 시 그리드 재설정 (모바일 <-> 데스크톱 전환 시)
+window.addEventListener('resize', () => {
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        list.style.gridTemplateColumns = '1fr';
+        list.style.gridTemplateRows = 'repeat(6, 1fr)'; // 기본 세로 배치
+    } else {
+        list.style.gridTemplateColumns = '10fr 1fr 1fr 1fr 1fr 1fr'; // 기본 가로 배치
+        list.style.gridTemplateRows = ''; // rows 초기화
+    }
+    // 현재 활성 아이템 재적용 (필요 시)
+    const activeItem = list.querySelector('[data-active="true"]');
+    if (activeItem) {
+        setIndex({ target: activeItem });
+    }
+});
+
+
+
+
+
+        // contents4 영역
+        const lightbox = $("#lightbox");
+        const block = $("#block");
+        const indicator = $(".indicator > button");
+        function lightbox_open(num) {
+            lightbox.addClass("active");
+            block.addClass("active");
+            indicator.eq(num - 1).focus();
+            change_img(num);
+        };
+        function lightbox_close() {
+            lightbox.removeAttr("class");
+            block.removeAttr("class");
+        };
+        function change_img(val) {
+            const imgs = $("figure > figcaption");
+            for (let i = 0; i < imgs.length; i++) {
+                imgs.eq(i).removeClass("active");
+            };
+            imgs.eq(val - 1).addClass("active");
+        };
+
+
+
+
+
+
+
+        //contents5 영역
+        // sec1 Swipers (Cards effect)
+        var swiper1 = new Swiper(".swiper1", {
+            effect: "cards",
+            grabCursor: true,
+        });
+        var swiper2 = new Swiper(".swiper2", {
+            effect: "cards",
+            grabCursor: true,
+        });
+        var swiper3 = new Swiper(".swiper3", {
+            effect: "cards",
+            grabCursor: true,
+        });
+        var swiper4 = new Swiper(".swiper4", {
+            effect: "cards",
+            grabCursor: true,
+        });
+
+        // sec2 Swipers (Creative effect)
+        var swiper5 = new Swiper(".swiper5", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, 0, -400],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                type: "fraction",
+            },
+        });
+        var swiper6 = new Swiper(".swiper6", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-120%", 0, -500],
+                },
+                next: {
+                    shadow: true,
+                    translate: ["120%", 0, -500],
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                type: "fraction",
+            },
+        });
+        var swiper7 = new Swiper(".swiper7", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-20%", 0, -1],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                type: "fraction",
+            },
+        });
+        var swiper8 = new Swiper(".swiper8", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, 0, -800],
+                    rotate: [180, 0, 0],
+                },
+                next: {
+                    shadow: true,
+                    translate: [0, 0, -800],
+                    rotate: [-180, 0, 0],
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                type: "fraction",
+            },
+        });
+        var swiper9 = new Swiper(".swiper9", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-125%", 0, -800],
+                    rotate: [0, 0, -90],
+                },
+                next: {
+                    shadow: true,
+                    translate: ["125%", 0, -800],
+                    rotate: [0, 0, 90],
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                type: "fraction",
+            },
+        });
+        var swiper10 = new Swiper(".swiper10", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    origin: "left center",
+                    translate: ["-5%", 0, -200],
+                    rotate: [0, 100, 0],
+                },
+                next: {
+                    origin: "right center",
+                    translate: ["5%", 0, -200],
+                    rotate: [0, -100, 0],
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                type: "fraction",
+            },
+        });
+    </script>
+
+
+    <!-- 마케팅 제휴 팝업 -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // 제휴문의 클릭 이벤트
+            $('.popMarketing').click(function (e) {
+                e.preventDefault(); // 기본 링크 동작 방지
+                // 폼 초기화
+                $('#marketingForm')[0].reset();
+                $('#marketingForm dd').removeClass('pass error');
+                $('#marketingForm input, ol, textarea').removeClass('error');
+                $('#marketingEmailUrl').attr('readonly', false);
+
+                // 팝업 표시
+                $('#popMarketing').addClass('active');
+                $('html, body, #wrap').addClass('noScroll');
+
+                // 스크롤 위치 저장
+                var scrollPos = $(window).scrollTop();
+                $('#popMarketing').attr('data-scroll', scrollPos);
+            });
+
+            // 닫기 버튼 이벤트
+            $('#popMarketing .close').click(function () {
+                $('#popMarketing').removeClass('active');
+                $('html, body, #wrap').removeClass('noScroll');
+
+                // 저장된 스크롤 위치로 복원
+                var scrollPos = $('#popMarketing').attr('data-scroll');
+                $('html, body').animate({ scrollTop: scrollPos }, 0);
+            });
+
+            // 이메일 셀렉박스 변경 이벤트
+            $('#marketingEmailType').change(function () {
+                if ($(this).val() !== 'userWrite') {
+                    $('#marketingEmailUrl').val($(this).val()).attr('readonly', true);
+                } else {
+                    $('#marketingEmailUrl').val('').attr('readonly', false);
+                }
+                $('#marketingEmailUrl').valid();
+                $('#marketingEmailID').valid();
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

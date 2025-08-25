@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/* pc버전 */
+@media(max-width:1900px){
+    /* 탭메뉴_버튼 */
+    /* 탭메뉴_상품상세 */
+    /* 탭메뉴_상품평 */
+    /* 탭메뉴_상품문의 */
+    /* 탭메뉴_배송교환 */
+}
+
+/* 데스크탑시작 */
+@media(max-width:1440px){
+    /* 탭메뉴_버튼 */
+    .tabmenu .tabBtn ul{margin: 20px;}
+    .tabmenu .tabBtn ul li a{width: 340px;}
+    /* 탭메뉴_상품상세 */
+    .product-info-box{width: 1300px; margin: 100px 50px;}
+    /* 탭메뉴_상품평 */
+    .tabCont2>article{width: 1360px; margin: 10px 20px;}
+    /* 탭메뉴_상품문의 */
+    /* 탭메뉴_배송교환 */
+    .tabCont4 {line-height: 1.5; width: 90%; margin: 10px 50px; font-size: 14px;}
+    .tabCont4 section {margin-top: 50px;}
+    .tabCont4 section:first-child{margin-top: 50px;}
+    .tabCont4 section table{font-size: 14px; line-height: 1.5; margin-top: 20px;}
+}
+@media(max-width:1200px){
+    /* 탭메뉴_버튼 */
+    .tabmenu .tabBtn ul li a{width: 280px; height: 70px; line-height: 70px; font-size: 22px;}
+    /* 탭메뉴_상품상세 */
+    .product-info-box{width: 1050px;}
+    .open-btn,.close-bottom-btn{width: 200px; font-size: 20px; padding: 15px 10px;}
+    /* 탭메뉴_상품평 */
+    .tabCont2>article{width: 1120px;}
+    /* 탭메뉴_상품문의 */
+    .search-bar{width: 70%; padding: 5px;}
+    .search-button{margin-left: 5px;}
+    .order-container{margin: 40px; width: 75%;}
+    .order-item{height: 100px; position: relative;}
+    .order-item span:last-child{position: absolute;right: 10px; bottom: 5px;}
+    /* 탭메뉴_배송교환 */
+    .tabCont4{width: 70%; font-size: 10px;}
+    .tabCont4 section {margin-top: 10px;}
+    .tabCont4 section h3{margin-top: 50px; padding: 10px 0;}
+    .tabCont4 section table{font-size: 12px;}
+    .tabCont4 section table td {padding: 10px;}
+}
+
+/* 테블릿 */
+@media(max-width:992px){
+    /* 탭메뉴_버튼 */
+    .tabmenu .tabBtn ul li a{width: 230px; height: 60px; line-height: 60px; font-size: 20px;}
+    /* 탭메뉴_상품상세 */
+    .product-info-box{width: 850px; margin: 10px 50px;}
+    /* 탭메뉴_상품평 */
+    .tabCont2>article{width: 920px; overflow: hidden;}
+    /* 탭메뉴_상품문의 */
+    .tabCont3{width: 80%;}
+    .tabCont3 h1 {margin: 20px;}
+    .tabCont3 ul li {margin: 10px 40px; font-size: 15px;}
+    /* 탭메뉴_배송교환 */
+    .tabCont4{width: 60%; font-size: 10px;}
+}
+
+@media(max-width:768px){
+    /* 탭메뉴_버튼 */
+    .tabmenu .tabBtn ul li a{width: 175px; height: 50px; line-height: 50px; font-size: 18px;}
+    /* 탭메뉴_상품상세 */
+    .product-info-box{width: 660px; margin: 10px 40px;}
+    .open-btn,.close-bottom-btn{width: 175px; font-size: 18px; padding: 8px 0px;}
+    /* 탭메뉴_상품평 */
+    .tabCont2>article{width: 700px;}
+    .tabCont2>article .reviewBtn>span{font-size: 12px;}
+    .tabCont2>article .reviewBtn button{font-size: 12px; padding: 5px 15px;}
+    .tabCont2>article .reviewBtn .report{font-size: 12px;}
+    /* 탭메뉴_상품문의 */
+    .tabCont3{width: 60%;}
+    .tabCont3 h1 {font-size: 20px;}
+    .tabCont3 ul li{font-size: 12px;}
+    .search-container{width: 50%; margin: 30px auto;}
+    .search-bar{padding: 3px; font-size: 14px;}
+    .search-input{font-size: 12px;}
+    .search-button{margin-left: 3px; font-size: 12px;}
+    .order-item{font-size: 14px;}
+    .order-item>img{width: 20px; height: 20px;}
+    .order-date{font-size: 10px;}
+    /* 탭메뉴_배송교환 */
+    .tabCont4{width: 47%; font-size: 10px;}
+    .tabCont4 section h3{margin-top: 0px;}
+    .tabCont4 section table{font-size: 10px;}
+    .tabCont4 section table td {text-align: left;}
+    .tabCont4 section table li{padding: 3px;}
+}
+
+/* 스마트폰 */
+@media(max-width:480px){
+    /* 탭메뉴_버튼 */
+    .tabmenu .tabBtn ul{display: block; width: 420px; margin-bottom: 10px;}
+    .tabmenu .tabBtn ul li a{width: 100%; height: 40px; line-height: 40px; font-size: 16px; margin-bottom: -1px;}
+    /* 탭메뉴_상품상세 */
+    .product-info-box{width: 420px; margin: 0px 20px; border: 1px solid #ddd; padding: 10px 10px;}
+    .open-btn,.close-bottom-btn{width: 400px; margin: 15px 0px; border-radius: 0; font-size: 16px;}
+    /* 탭메뉴_상품평 */
+    .tabCont2>article{width: 420px; border: 1px solid #ddd; padding: 10px; cursor: pointer;}
+    .tabCont2>article .reviewImage ul li img{width: 70px; height: 70px;}
+    .tabCont2>article .reviewCont{margin-top: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    .tabCont2>article .reviewCont span{ font-size: 12px;}
+    .tabCont2>article .reviewP{margin-top: 10px;}
+    .tabCont2>article .reviewP p, .tabCont2>article .reviewP p strong{font-size: 12px;}
+    .tabCont2>article .reviewBtn .report{padding: 5px;}
+    /* 탭메뉴_상품문의 */
+    .tabCont3{width: 33%; padding: 10px;}
+    .search-container{width: 100%; margin: 10px 50px;}
+    .order-container{width: 80%; margin-top: 10px;}
+    .order-item{height:auto;padding-bottom: 30px; padding-left: 40px; padding-top: 0px;}
+    .order-item>img{position: absolute; top: -20px; left: -10px;}
+
+    /* 탭메뉴_배송교환 */
+    .tabCont4 {width: 29%; margin-left: 20px; border: 1px solid #ddd; padding: 0 10px; margin-bottom: 10px;}
+    .tabCont4 section{margin: 20px 0; }
+    .tabCont4 section:first-child{margin: 30px 0;}
+    .tabCont4 section:last-child{margin: 100px 0;}
+    .tabCont4 section h3{margin: 10px;}
+
+
+
+    /* 푸터_탑버튼 : #quick2 */
+    #quick2{display: none;}
+}
+@media(max-width:320px){
+    /* 탭메뉴_버튼 */
+    .tabmenu .tabBtn ul{width: 280px;}
+    .tabmenu .tabBtn ul li a{height: 30px; line-height: 30px; font-size: 14px;}
+    /* 탭메뉴_상품상세 */
+    .product-info-box{width: 280px; margin: 10px 20px; border: 1px solid #ddd; padding: 5px 5px;}
+    .open-btn,.close-bottom-btn{width: 260px; margin: 5px 0px; border-radius: 0; font-size: 14px; padding: 3px;}
+    /* 탭메뉴_상품평 */
+     .tabCont2>article{width: 280px;}
+     .tabCont2>article .reviewBtn button{font-size: 10px; padding: 5px 7px;}
+     .tabCont2>article .reviewBtn .report{font-size: 10px; }
+    /* 탭메뉴_상품문의 */
+    .tabCont3{width: 25%; margin: 0; padding: 0;}
+    .tabCont3 ul li{width: 72%;font-size: 10px; padding: 0; margin-left: 30px;}
+    .search-container{width: 100%; margin: 10px 30px; padding: 3px;}
+    .search-input{font-size: 10px; padding: 3px;}
+    .search-button{font-size: 10px;padding: 3px 10px;}
+    .order-container{width: 70%; margin-top: 0px; margin-left: 30px; padding: 10px;}
+    .order-item{font-size: 10px;}
+    /* 탭메뉴_배송교환 */
+    .tabCont4{width: 19.5%;}
+    .tabCont4 section{margin-top: 70px;}
+    .tabCont4 section:first-child{margin-top: 10px;}
+    .tabCont4 section:last-child{margin-top: 130px;}
+    .tabCont4 section h3{margin: 0px; padding: 0;}
+    .tabCont4 section table{margin-top: 0;}
+}

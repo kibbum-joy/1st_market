@@ -1,0 +1,1815 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {margin: 0 5px;}
+
+/* id */
+#header {width: 100%;}
+
+#banner {width: 100%;}
+
+#contents1 {margin-top: 100px;}
+
+#contents2 {
+    /* background-image: linear-gradient(to right, #FFEEEE 0%, #DDEFBB  51%, #FFEEEE  100%) */
+}
+
+#contents3 {margin-top: 100px;}
+
+#contents4 {}
+
+#contents5 {}
+
+#footer {background: #38332d;}
+
+
+
+.container {
+    margin: 0 auto;
+    width: 1900px;
+    overflow: hidden;
+
+}
+
+ol,li {list-style: none; text-decoration: none;}
+a {color: #222; text-decoration: none;}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 장바구니 */
+.container {
+    /* display: flex;
+            gap: 20px;
+            padding: 20px; */
+}
+
+.product {
+    cursor: pointer;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#cart {
+    position: fixed;
+    top: 160px;
+    right: 20px;
+    width: 120px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px dashed orange;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 0;
+    z-index: 10;
+}
+
+#cart h2 {
+    font-family: 'GongGothicMedium';
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px dashed orange;
+}
+
+#cart h2 img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+#cart-items {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    cursor: pointer;
+    border-bottom: 1px dashed #aaa;
+}
+
+.cart-item img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* header ------------------------------------*/
+
+.header {
+    width: 1900px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* margin-top: 50px; */
+}
+
+.header>h1 {
+    width: 400px;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.header>h1>a {
+    margin-top: 40px;
+    display: block;
+    height: 50px;
+}
+
+.header>h1>a>img {
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    padding-top: 10px;
+}
+
+/* .header>h2 {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+} */
+
+
+#Nav {
+    width: 1560px;
+    height: 100px;
+}
+
+#Nav>.Main_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Nav>.Main_menu>li {
+    width: 240px;
+    height: 50px;
+    padding-top: 48px;
+    position: relative;
+}
+
+#Nav>.Main_menu>li>a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Tenada';
+    margin-right: 0.1px;
+}
+
+#Nav>.Main_menu>li>ul {
+    position: absolute;
+    top: 105px;
+    left: -10px;
+    z-index: 2000;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 300px;
+    padding-top: 20px;
+    display: none;
+    border-radius: 5px;
+    border: 0.5px dashed #fff;
+}
+
+#Nav>.Main_menu>li>ul>li {}
+
+#Nav>.Main_menu>li>ul>li>a {
+    display: block;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Pretendard-Regular';
+    transition: all 0.5s;
+}
+
+#Nav .hover-text {
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+#Nav .hover-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    font-size: 22px;
+    transition: all 0.5s;
+    white-space: nowrap;
+}
+
+#Nav .hover-text:hover {
+    color: transparent;
+}
+
+#Nav .hover-text:hover::after {
+    opacity: 0.8;
+    color: orange;
+    border-bottom: 5px solid orange;
+    border-radius: 10px;
+}
+
+#Nav>.Main_menu>li>ul>li>a.hover-text::after {
+    font-size: 18px;
+    border-left: 25px solid #fff;
+    transition: all 0.5s;
+}
+
+#Nav>.Main_menu>li>ul>li>a.hover-text:hover::after {
+    border-bottom: none;
+    border-left: 25px solid orange;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.header>a {
+    width: 100px;
+    height: 50px;
+    display: block;
+    object-fit: cover;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.header>a>img {
+    width: 100px;
+    height: 100px;
+}
+
+.header>a>.naver {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    left: -200px;
+    top: -25px;
+}
+
+.header>a>.naver>li {
+    position: absolute;
+    z-index: 50;
+    float: left;
+}
+
+.header>a>.naver>li>input {
+    display: inline-block;
+    border: 3px solid #333;
+    outline: none;
+    font-family: 'Pretendard-Regular';
+}
+
+.header>a>.naver>li.s_text>input {
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.header>a>.naver>li.s_btn>input {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    right: -300px;
+    cursor: pointer;
+}
+
+.header>a>.naver>li.s_btn>input:hover {
+    color: rgb(250, 232, 175);
+}
+
+
+
+
+/* banner ----------------------------------------*/
+.banner {
+    height: 600px;
+    margin-top: 150px;
+    position: relative;
+    cursor: pointer;
+
+}
+.banner > div > img {
+    width: 1900px; 
+    overflow: hidden;
+}
+
+.banner .slick-dots {
+    width: 300px;
+    /* background-color: #000; */
+    text-align: center;
+    bottom: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .slick-dots li {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* background-color: red; */
+    margin: 5px 10px;
+
+}
+
+.banner .slick-dots li button {
+    width: 100%;
+    height: 100%;
+    /* font-size: 0; */
+    text-indent: -99999px;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+.banner .slick-dots li.slick-active button {
+    opacity: 1;
+}
+
+/* 배너 서브 */
+.banner .slick-slide {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.slider1 {
+    position: relative;
+    /* height: 100%;
+    overflow: hidden; */
+}
+.bar_btn{
+    position: absolute;
+    top: 30px;
+    right: 140px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 83%;
+    justify-content: space-between;
+    z-index: 10000;
+}
+.slider1 .banner_sub{}
+.slider1 .banner_sub img{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+/* tit */
+.b_sub {
+    position: absolute;
+        width: 60px;
+        height: 60px;
+        bottom: -13%;
+        right: 8%;
+        z-index: 21;
+        display: block;
+}
+
+.sub_btn {
+    /* display: block; */
+    
+    /* position: absolute;
+    bottom: -60px;
+    right: 5px; */
+    /* z-index: 21; */
+
+}
+
+.sub_btn>a.btn {
+    width: 60px;
+    height: 60px;
+    display: block;
+    background: url(../images/icon.png) 0px -600px;
+    box-shadow: 1px 1px 10px #fff;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.sub_btn>a.btn:hover {
+    background-position: -60px -600px;
+    opacity: 0.8;
+
+}
+
+.sub_btn>a.btn.on {
+    background-position: 0 -660px;
+    box-shadow: 1px 1px 10px #fff;
+    border-radius: 50%;
+}
+
+.sub_btn>a.btn.on:hover {
+    background-position: -60px -660px;
+    opacity: 0.8;
+}
+
+
+/* ___________________________________________  */
+.slider2 {
+    position: relative;
+
+    /* position: absolute;
+  
+    left: 0;
+    top: 0;
+    z-index: 100; */
+}
+.slider2  .bar_btn2{
+    position: absolute;
+    top:30px;
+    right: 140px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 83%;
+    justify-content: space-between;
+    z-index: 10000;
+}
+.slider2 .banner_sub2{
+   width: 100%;
+}
+.slider2 .banner_sub2 img{
+    width: 100%;
+    margin-bottom: 5%;
+    /* display: block; */
+}
+
+
+/* tit */
+
+.b_sub2{
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+}
+.sub_btn2 {
+    display: block;
+    width: 60px;
+    height: 60px;
+    
+
+}
+
+.sub_btn2>a.btn {
+    width: 60px;
+    height: 60px;
+    display: block;
+    background: url(../images/icon.png) 0px -600px;
+    box-shadow: 1px 1px 10px #fff;
+    border-radius: 50%;
+    opacity: 0.9;
+    /* position: absolute;
+    bottom: 20px;
+    right:0px; */
+}
+
+.sub_btn2>a.btn:hover {
+    background-position: -60px -600px;
+    opacity: 0.8;
+
+}
+
+.sub_btn2>a.btn.on {
+    background-position: 0 -660px;
+    box-shadow: 1px 1px 10px #fff;
+    border-radius: 50%;
+}
+
+.sub_btn2>a.btn.on:hover {
+    background-position: -60px -660px;
+    opacity: 0.8;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/* cont1 ----------------------------------------*/
+
+.contents1 {
+    height: 100%;
+    max-height: 900px;
+    /* background-color: #ffe4e9; */
+    text-align: center;
+}
+
+.contents1>h3 {
+    padding: 60px 35px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: 'GongGothicMedium';
+    text-align: center;
+    position: relative;
+}
+
+.contents1>h3::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 2px;
+    background-color: #ddd;
+    top: 85px;
+    right: 0;
+}
+
+.contents1>h3::before {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 2px;
+    background-color: #ddd;
+    top: 85px;
+    left: 0;
+}
+
+.contents1 .swiper {
+    width: 100%;
+    max-width: 1900px;
+    height: 600px;
+    /* background-color: none; */
+}
+
+.contents1 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents1 .swiper-slide img {
+    display: block;
+    width: 100%;
+
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: orange;
+    width: 200px;
+}
+
+.contents1 .timedeal {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.timedeal a {}
+
+.timedeal a.cont1_img img{
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+.timedeal a.cont1_text {
+    padding: 30px;
+}
+
+.timedeal a.cont1_text .timer {
+    line-height: 200px;
+    font-weight: bold;
+    color: red;
+    font-size: 60px;
+    text-shadow: -1px 0px 5px rgb(255, 255, 255), 0px 1px 5px rgb(255, 255, 255), 1px 0px 5px rgb(255, 255, 255), 0px -1px 5px rgb(255, 255, 255);
+}
+
+.timedeal a.cont1_text h4 {
+    font-weight: bold;
+    font-size: 2.2vw;
+    padding: 10px 0;
+}
+
+.timedeal a.cont1_text p {
+    font-size: 1.4vw;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.timedeal a.cont1_text h5 {
+    font-size: 1.5vw;
+    color: blue;
+    padding: 30px 0;
+}
+
+.timedeal a.cont1_text h5 span {
+    color: #333;
+    position: relative;
+    font-size: 1.5vw;
+}
+
+.timedeal a.cont1_text h5 span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    top: 50%;
+    left: 0;
+}
+
+.timedeal a.cont1_text h5 strong {
+    color: #333;
+    padding-left: 10px;
+}
+
+.timedeal a.cont1_text p:last-child {
+    color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cont2 ----------------------------------------*/
+
+.contents2 {
+    /* background-color: rgb(255, 255, 255); */
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contents2>h3 {
+    padding: 35px 35px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: 'GongGothicMedium';
+    text-align: center;
+    position: relative;
+}
+.contents2>h3::after{
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 2px;
+    background-color: #ddd;
+    top: 65px;
+    right: 0;
+}
+.contents2>h3::before{
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 2px;
+    background-color: #ddd;
+    top: 65px;
+    left: 0;
+}
+
+.rap {
+    height: 300px;
+    /* hover1, hover2 가로 정렬해서 중앙배치 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300%;
+    left: -400px;
+    /* margin-top: 20px; */
+}
+
+
+.rap .hover1 {
+    width: 100%;
+    max-width: 296px;
+    height: 100%;
+    max-height: 300px;
+    margin: 50px 10px 50px 10px;
+
+    /* front, back의 기준점 */
+    position: relative;
+    left: -400px;
+    perspective: 1000px;
+    cursor: pointer;
+
+}
+
+.rap .hover1 .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: all 0.9s;
+    backface-visibility: hidden;
+}
+
+.rap .hover1:hover .front {
+    transform: rotateY(180deg);
+}
+
+.rap .hover1 .front figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(100px);
+    color: aliceblue;
+    text-align: center;
+    padding: 3% 4%;
+    backface-visibility: hidden;
+
+
+}
+
+.rap .hover1 .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    transition: all 0.9s;
+
+
+}
+
+.rap .hover1:hover .back {
+    transform: rotateY(0deg);
+}
+
+.rap .hover1 .back figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(100px);
+    color: aliceblue;
+    text-align: center;
+    padding: 3% 4%;
+    backface-visibility: hidden;
+
+}
+
+.hover1 img {
+    width: 296px;
+    /* box-shadow: 0px 0px 3px rgb(255, 123, 0);
+    border-radius: 0px 5px 5px 5px;
+    border: 1px solid darksalmon; */
+}
+
+.scrolling {
+    position: relative;
+    animation: moving 20s linear infinite;
+
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-41%);
+    }
+}
+
+/*  두번째 줄 */
+
+.rap .hover2 {
+    width: 296px;
+    height: 300px;
+    margin: 100px 10px 50px 10px;
+
+    /* front, back의 기준점 */
+    position: relative;
+    left: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.rap .hover2 .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: all 0.9s;
+    backface-visibility: hidden;
+}
+
+.rap .hover2:hover .front {
+    transform: rotateY(180deg);
+}
+
+.rap .hover2 .front figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(100px);
+    color: aliceblue;
+    text-align: center;
+    padding: 3% 4%;
+    backface-visibility: hidden;
+
+
+}
+
+.rap .hover2 .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    transition: all 0.9s;
+
+
+}
+
+.rap .hover2:hover .back {
+    transform: rotateY(0deg);
+}
+
+.rap .hover2 .back figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(100px);
+    color: aliceblue;
+    text-align: center;
+    padding: 3% 4%;
+    backface-visibility: hidden;
+
+}
+
+.hover2 img {
+    width: 100%;
+    /* border-radius: 10px; */
+    /* border: 1px solid darksalmon; */
+}
+
+.scrolling2 {
+    position: relative;
+    animation: moving2 23s linear infinite;
+
+}
+
+@keyframes moving2 {
+    0% {
+        transform: translateX(-53%);
+    }
+
+    100% {
+        transform: translateX(-13%);
+    }
+}
+
+
+
+
+
+
+
+/* cont3 ----------------------------------------*/
+
+.contents3 {
+    height: auto; /* 고정 높이 제거, 내용에 따라 자동 조정 */
+    cursor: pointer;
+    padding: 20px 0; /* 상하 패딩 추가로 여백 확보 */
+}
+
+.contents3 h3 {
+    padding: 60px 35px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: 'GongGothicMedium';
+    text-align: center;
+    position: relative;
+}
+
+.contents3>h3::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 2px;
+    background-color: #ddd;
+    top: 85px;
+    right: 0;
+}
+
+.contents3>h3::before {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 2px;
+    background-color: #ddd;
+    top: 85px;
+    left: 0;
+}
+
+.contents3 :is(h3) {
+    opacity: 1;
+    transition: opacity calc(var(--speed) * 1.2) var(--easing);
+}
+
+.contents3 li :is(a, p) {
+    opacity: 1;
+    transition: opacity calc(var(--speed) * 1.2) var(--easing);
+    width: fit-content;
+}
+
+.contents3 li img {
+    scale: 1.1;
+    transition-property: scale;
+    transition-duration: calc(var(--speed) * 1.2);
+    transition-timing-function: var(--easing);
+}
+
+[data-active='true'] :is(a, p, h3) {
+    opacity: var(--opacity, 1);
+}
+
+[data-active='true'] :is(a, p) {
+    transition-delay: calc(var(--speed) * 0.25);
+}
+
+[data-active='true'] img {
+    scale: 1;
+    transition-delay: calc(var(--speed) * 0.25);
+}
+
+/* article */
+.contents3 article {
+    width: calc(var(--article-width) * 1px);
+    height: 100%;
+    position: absolute;
+    font-family: monospace;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-inline: calc(var(--base) * 0.5 - 9px);
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+.contents3 article>h3 {
+    position: absolute;
+    top: 1rem;
+    left: calc(var(--base) * 0.5);
+    transform-origin: 0 50%;
+    rotate: 90deg;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: monospace;
+    z-index: 100;
+}
+
+.contents3 article>p {
+    font-size: 13px;
+    text-wrap: balance;
+    line-height: 1.25;
+    --opacity: 1;
+}
+
+.contents3 article>a {
+    position: absolute;
+    bottom: 1rem;
+    height: 18px;
+    line-height: 1;
+    color: inherit;
+}
+
+.contents3 article>span {
+    display: inline-block;
+    line-height: 18px;
+    translate: calc(var(--base) * 0.5);
+    font-weight: 500;
+}
+
+.contents3 article>img {
+    position: absolute;
+    pointer-events: none;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask: radial-gradient(100% 100% at 100% 0, #fff, rgba(0, 0, 0, 0.8));
+}
+
+:root {
+    --gap: 8px;
+    --base: clamp(2rem, 8cqi, 80px);
+    --easing: linear(0 0%,
+            0.1538 4.09%,
+            0.2926 8.29%,
+            0.4173 12.63%,
+            0.5282 17.12%,
+            0.6255 21.77%,
+            0.7099 26.61%,
+            0.782 31.67%,
+            0.8425 37%,
+            0.8887 42.23%,
+            0.9257 47.79%,
+            0.9543 53.78%,
+            0.9752 60.32%,
+            0.9883 67.11%,
+            0.9961 75%,
+            1 100%);
+    --speed: 1s;
+    --items: 6;
+    --ideal: 300px;
+}
+
+.contents3 ul {
+    display: grid;
+    container-type: inline-size;
+    grid-template-columns: 10fr 1fr 1fr 1fr 1fr 1fr; /* 기본: 가로 그리드 */
+    gap: var(--gap);
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    height: clamp(650px, 40dvh, 650px);
+    margin: 0;
+    width: 100%;
+    max-width: calc(100% - 4rem);
+    transition: grid-template-columns var(--speed) var(--easing);
+    margin: 0 auto;
+}
+
+.contents3 li {
+    background: light-dark(#fff, #000);
+    position: relative;
+    overflow: hidden;
+    min-width: var(--base);
+    border-radius: 0px;
+    border: 1px solid #fff;
+}
+
+@layer base {
+    :root {
+        --font-size-min: 16;
+        --font-size-max: 20;
+        --font-ratio-min: 1.2;
+        --font-ratio-max: 1.33;
+        --font-width-min: 375;
+        --font-width-max: 1500;
+    }
+
+    :where(.fluid) {
+        --fluid-min: calc(var(--font-size-min) * pow(var(--font-ratio-min), var(--font-level, 0)));
+        --fluid-max: calc(var(--font-size-max) * pow(var(--font-ratio-max), var(--font-level, 0)));
+        --fluid-preferred: calc((var(--fluid-max) - var(--fluid-min)) / (var(--font-width-max) - var(--font-width-min)));
+        --fluid-type: clamp((var(--fluid-min) / 16) * 1rem,
+                ((var(--fluid-min) / 16) * 1rem) - (((var(--fluid-preferred) * var(--font-width-min)) / 16) * 1rem) + (var(--fluid-preferred) * var(--variable-unit, 100vi)),
+                (var(--fluid-max) / 16) * 1rem);
+        font-size: var(--fluid-type);
+    }
+}
+
+
+
+/* cont4 ----------------------------------------*/
+
+#contents4 {
+    position: relative;
+
+}
+
+.contents4 {
+    font-family: 'Pretendard-Regular';
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    height: auto;
+    width: 100%;
+    z-index: 9;
+    padding: 15px 20px;
+
+}
+
+.contents4 h3 {
+    padding: 60px 35px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: 'GongGothicMedium';
+    text-align: center;
+    position: relative;
+}
+.contents4>h3::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background-color: #ddd;
+    top: 85px;
+    right: 0;
+}
+.contents4>h3::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background-color: #ddd;
+    top: 85px;
+    left: 0;
+}
+/* Flexbox로 이미지 그리드 설정 */
+.contents4 .image-container {
+    display: flex;
+    flex-wrap: wrap; /* 두 줄로 나뉘도록 설정 */
+    justify-content: space-between; /* 이미지 간 간격 균등 분배 */
+    gap: 10px; /* 이미지 간 간격 */
+}
+
+.contents4 img {
+    flex: 1 1 calc(33.333% - 10px); /* 3개씩 배치, 간격 고려 */
+    max-width: 600px; /* 최대 너비 유지 */
+    min-width: 150px; /* 최소 너비 설정으로 너무 작아지지 않도록 */
+    border-radius: 15px;
+    box-shadow: 1px 1px 0px #555;
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: all 0.3s;
+    background-color: rgba(243, 237, 237, 0.1);
+    box-sizing: border-box;
+}
+
+.contents4 img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 5px #999;
+}
+
+
+
+
+#block {
+    /* width: 100%;
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed; /* 화면 전체를 덮도록 fixed로 변경 */
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: none;
+
+}
+
+#block.active {
+    display: block;
+}
+
+#lightbox {
+    display: none;
+    cursor: pointer;
+}
+
+#lightbox.active {
+    /* display: block;
+    width: 100%;
+    max-width: 800px;
+    height: 540px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -200px;
+    padding: 30px;
+    box-shadow: 1px 1px 15px #8b8b8b;
+    border-radius: 10px;
+    z-index: 11;
+    border: 5px solid rgb(255, 92, 16);
+    background-color: rgba(255, 255, 255, 0.9); */
+
+    display: block;
+    width: 90%; /* 화면 너비에 맞게 유연하게 */
+    max-width: 800px;
+    height: auto; /* 고정 높이 제거, 내용에 따라 조정 */
+    position: fixed; /* 화면 중앙에 고정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 중앙 정렬 */
+    padding: 20px;
+    box-shadow: 1px 1px 15px #8b8b8b;
+    border-radius: 10px;
+    z-index: 21;
+    border: 5px solid rgb(255, 92, 16);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+}
+
+
+
+#lightbox figure {
+    /* width: 100%;
+    height: 90%;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 30px; */
+    width: 100%;
+    height: auto; /* 높이를 내용에 맞게 */
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#lightbox figure figcaption {
+    display: none;
+}
+
+#lightbox figure figcaption.active {
+    display: block;
+}
+
+#lightbox figure figcaption h3 {
+    font-size: 28px;
+    text-align: center;
+    margin: 15px 0;
+    color: rgb(255, 92, 16);
+    text-shadow: 1px 1px 0px #777;
+    font-weight: bold;
+    border-bottom: 1px dashed rgb(255, 92, 16);
+    padding-bottom: 5px;
+}
+
+#lightbox figure figcaption p {
+    color: #333;
+    text-shadow: -1px 1px 2px #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.8;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 0px;
+}
+
+#lightbox figure figcaption h3:hover {
+    border-bottom: 1px dashed #000;
+
+}
+
+#lightbox figure figcaption:last-child p {
+    font-size: 18px;
+}
+
+#lightbox figure figcaption img {
+    /* text-align: center;
+    display: inline-block;
+    width: 65%;
+    margin-left: 20%; */
+    display: block;
+    width: 65%;
+    max-width: 100%; /* 이미지가 컨테이너를 넘지 않도록 */
+    margin: 0 auto; /* 중앙 정렬 */
+}
+
+#lightbox .indicator {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#lightbox .indicator button {
+    width: 20px;
+    height: 21px;
+    margin: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-color: rgb(255, 92, 16);
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+#lightbox .indicator button:hover {
+    border: 1px dashed rgb(255, 92, 16);
+}
+
+#lightbox .indicator button:focus {
+    background-color: rgb(255, 92, 16);
+    color: #e3f2fd;
+}
+
+#lightbox .btn_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    border: 2px dashed rgba(255, 92, 16, 0.8);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+#lightbox>.btn_close:hover {
+    color: rgb(255, 92, 16);
+    background-color: #fff;
+    border: 2px dashed #333;
+}
+
+
+
+
+/* cont5 ----------------------------------------*/
+.contents5 {
+    height: 900px;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    z-index: 9;
+    margin-bottom: 130px;
+}
+
+.contents5 section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contents5 .sec1 {
+    margin-bottom: 50px;
+}
+
+.contents5 h3 {
+    padding: 60px 35px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: 'GongGothicMedium';
+    text-align: center;
+    position: relative;
+}
+
+.contents5 .sec2 {
+    /* margin-bottom: 100px; */
+}
+.contents5>h3::after{
+    content: "";
+    position: absolute;
+    width: 750px;
+    height: 2px;
+    background-color: #ddd;
+    top: 85px;
+    right: 0;
+}
+.contents5>h3::before{
+    content: "";
+    position: absolute;
+    width: 750px;
+    height: 2px;
+    background-color: #ddd;
+    top: 85px;
+    left: 0;
+}
+
+
+.swiper {
+    width: 280px;
+    height: 350px;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.swiper-wrapper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    /* border: 1px solid orange; */
+}
+
+.contents5 .swiper-slide>img {
+    width: auto;
+}
+
+/* .swiper-wrapper .swiper-slide:nth-child(1) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-wrapper .swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-wrapper .swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-wrapper .swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-wrapper .swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+} */
+
+
+
+/* footer ----------------------------------------*/
+
+
+/* 제휴문의 팝업창 */
+#popMarketing {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#popMarketing.active {
+    display: block;
+}
+#popMarketing fieldset h2{
+    font-size: 24px;
+}
+#popMarketing fieldset h3, p{
+    font-size: 16px;
+}
+#popMarketing fieldset dt{
+    margin-top: 15px;
+    font-size: 16px;
+}
+.at{ 
+    display: block;
+    width: 10px;
+    height: 10px;
+    font-size: 14px;
+    margin: 5px 0 1px 5px;
+}
+
+#marketingEmailType{
+    max-width: 150px;
+    width: 100%;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.regist dd input{
+    max-width: 150px;
+    width: 100%;
+    height: 35px;
+    margin-left: 10px;
+    
+}
+ol{display: flex;}
+
+#marketingQuestion{
+    margin-left: 10px;
+    max-width: 300px;
+    width: 100%;
+}
+.check .at{}
+
+.btnC{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+#submitMarketing{
+    font-weight: bold;
+}
+
+/* 추가: 스크롤 방지 스타일 */
+.noScroll {
+    overflow: hidden;
+}
+
+/* 닫기 버튼 스타일 개선 (선택 사항) */
+#popMarketing .close {
+    /* display: block; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 70px;
+    height: 40px;
+    background: orange;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 20%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* 하단 */
+.footer {
+    width: 1420px;
+    position: relative;
+    /* z-index: 95; */
+    height: 720px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.footer >h1 {
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    width: 385px;
+
+}
+
+.footer h1 > a > img {
+    display: block;
+    width: 100%;
+    /* border: 1px solid blanchedalmond; */
+}
+
+.footer nav{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 50%;
+    height: 30%;
+}
+.footer nav .gnbFoot{
+    
+    width: 710px;
+    height: 330px;
+    display: table;
+}
+.footer nav ul.gnbFoot>li{
+    width: 240px;
+}
+.footer nav ul.gnbFoot>li,
+.footer section>*,
+.footer div ul li {
+    vertical-align: top;
+    display: table-cell;
+}
+
+
+.footer nav ul.gnbFoot>li::before {
+    width: 5px;
+    height: 30px;
+    margin-bottom: 54px;
+    background: rgba(255, 255, 255, 0.30);
+    display: block;
+    content: "";
+}
+
+.footer nav h3 {
+    margin-bottom: 14px;
+    font-size: 25px;
+    color: beige;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.footer nav a {
+    color: bisque;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer nav ul ul li {
+    margin-top: 6px;
+}
+
+.footer nav .about {
+    display: block;
+    width: 800px;
+    position: absolute;
+    top: 370px;
+    right: 0px;
+    /* background-color: red; */
+
+}
+
+.footer nav .about>li {
+    float: right;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.footer nav .about>li:first-child a {}
+
+
+.footer section {
+    width: 1420px;
+    height: 400px;
+    /* background-color: red; */
+    position: relative;
+    top: 400px;
+    margin-left: 10px;
+}
+
+
+.footer section address {
+    padding: 0 0 0px 0px;
+    font-size: 16px;
+    color: bisque;
+
+}
+
+.footer section::before {
+    height: 2px;
+    margin-bottom: 36px;
+    background: #4e5057;
+    display: block;
+    content: "";
+}
+
+.footer address dl.contact {
+    margin-bottom: 23px;
+    color: beige;
+}
+
+.footer address dl.contact>dt {
+    float: left;
+    margin: 7px 10px 10px 10px;
+    font-weight: 700;
+}
+
+.footer address dl.contact>dd {
+    font-size: 26px;
+}
+
+.footer address dl.addr dt{
+    float: left;
+    display: block;
+}
+
+.footer address dl.addr dd::before{
+    width: 2px;
+    height: 12px;
+    margin: 0 10px;
+    background: #797a81;
+    vertical-align: -1px;
+    display: inline-block;
+    content: "";
+}
+
+.footer address p {
+    margin-top: 18px;
+}
+
+.footer div.link {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+
+}
+.link select {
+    padding: 6px 12px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 339px;
+    cursor: pointer;
+
+}
+
+#quick {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    width: 60px;
+    border: 0 none !important;
+    z-index: 100;
+}
+
+#quick > button {
+    width: 62px;
+    height: 61px;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px dashed orange;
+    color: orange;
+    font-size: 16px;
+    opacity: 0.8;
+    font-family: 'Pretendard-Regular';
+}
+
+#quick > button:hover {
+    background-color: orange;
+    color: #fff;
+    opacity: 0.8;
+
+}
