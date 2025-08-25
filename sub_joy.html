@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBLOOM</title>
+    <link rel="icon" href="./images/hicon.png">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/stylejoy.css">
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- contents1 -->
+        <div id="contents1">
+            <main>
+                <header>
+                    <h1>
+                        <div class="word-container">
+                            <span class="we">We</span>
+                            <span class="bloom">
+                                <span class="b">b</span>
+                                <span class="loom">loom</span>
+                            </span>
+
+                            <!-- 의미 텍스트 -->
+                            <div class="meaning" id="we-meaning">: 우리, 함께 피어나다</div>
+                            <div class="meaning" id="loom-meaning">: 웹에서 피어나는 창의성</div>
+                        </div>
+                    </h1>
+
+
+                    <img src="./images/f_logo.png" alt="팀로고이미지">
+
+                </header>
+
+                <nav>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <article>
+                        <div class="inner">
+                            <div class="text">
+                                <h2>조현성</h2>
+                                <p>#코드리스트 #육비에진심 #기타는장식아님</p>
+                                <p>" 명령어는 손맛이지! 기타 줄처럼 코드를 튕기는 남자! "</p>
+                            </div>
+                            <figure>
+                                <video src="./video/1.mp4" loop muted></video>
+                            </figure>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="inner">
+                            <div class="text">
+                                <h2>김기쁨</h2>
+                                <p>#정리고수 #섬세장인 #감성크리에이터</p>
+                                <p>" 혼란은 안녕! 디테일과 감성을 함께 챙기는 팀의 숨은 조력자. "</p>
+                            </div>
+                            <figure>
+                                <video src="./video/2.mp4" loop muted></video>
+                            </figure>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="inner">
+                            <div class="text">
+                                <h2>도가경</h2>
+                                <p>#미모장착 #img장인 #팀비타민</p>
+                                <p>" 분위기,미모 둘 다 책임지는 팀의 비타민 디자이너! "</p>
+                            </div>
+                            <figure>
+                                <video src="./video/3.mp4" loop muted></video>
+                            </figure>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="inner">
+                            <div class="text">
+                                <h2>한동훈</h2>
+                                <p>#낭만팀장! #코딩박사 #아이디어뱅크</p>
+                                <p>" 아이디어 뚝딱! 코드 척척! 오늘도 팀장님은 레전드 갱신 중! "</p>
+                            </div>
+                            <figure>
+                                <video src="./video/4.mp4" loop muted></video>
+                            </figure>
+                        </div>
+                    </article>
+                </section>
+                <aside>
+                    <div class="text">
+                        <h1>타이틀</h1>
+                        <p>타이틀 아래에 있는 p테그값이 들어오는 곳입니다.</p>
+                        <span>CLOSE</span>
+                    </div>
+                    <figure>
+                        <video src="./vids/vid1.mp4" loop muted></video>
+                    </figure>
+                </aside>
+
+                <footer>
+                    <address>
+                        © 2025 Terra Market<br>
+                        Designed & Developed with care by our team.
+                    </address>
+                </footer>
+            </main>
+
+
+
+        </div><!-- contents1 -->
+    </div><!-- wrap -->
+
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        $(function () {
+            const $items = $("article");
+            const $aside = $("aside");
+            const $close = $(".text > span");
+
+            $items.each(function () {
+                const $el = $(this);
+
+                $el.on("mouseenter", function () {
+                    $el.find("video")[0].play();
+                });
+
+                $el.on("mouseleave", function () {
+                    $el.find("video")[0].pause();
+                });
+
+                $el.on("click", function () {
+                    const tit = $el.find("h2").text();
+                    const txt = $el.find("p").text();
+                    const vidsrc = $el.find("video").attr("src");
+
+                    $aside.find("h1").text(tit);
+                    $aside.find("p").text(txt);
+                    $aside.find("video").attr("src", vidsrc)[0].play();
+                    $aside.addClass("on");
+                });
+            });
+
+            $close.on("click", function () {
+                $aside.find("video")[0].pause();
+                $aside.removeClass("on");
+            });
+
+            // loom hover 이벤트 처리
+            const $loom = $(".loom");
+            const $we = $(".we");
+            const $b = $(".b");
+            const $loomMeaning = $("#loom-meaning");
+
+            $loom.on("mouseenter", function () {
+                $loomMeaning.css({ opacity: 1, visibility: "visible" });
+
+                $we.css("color", "white");
+                $b.css({
+                    color: "white",
+                    "border-bottom": "2px solid orange",
+                    "padding-bottom": "2px",
+                });
+                $loom.css("color", "orange");
+            });
+
+            $loom.on("mouseleave", function () {
+                $loomMeaning.css({ opacity: 0, visibility: "hidden" });
+
+                $we.css("color", "");
+                $b.css({
+                    color: "",
+                    "border-bottom": "",
+                    "padding-bottom": "",
+                });
+                $loom.css("color", "");
+            });
+        });
+    </script>
+
+    <!-- <script>
+        const items = document.querySelectorAll("article");
+        const aside = document.querySelector("aside");
+        const close = document.querySelector(".text > span");
+
+        for (let el of items) {
+            // console.log(el)
+            el.addEventListener("mouseenter", function (e) {
+                e.currentTarget.querySelector("video").play();
+            });
+            el.addEventListener("mouseleave", e => {
+                e.currentTarget.querySelector("video").pause();
+            });
+            el.addEventListener("click", function (e) {
+                let tit = e.currentTarget.querySelector("h2").innerText;
+                let txt = e.currentTarget.querySelector("p").innerText;
+                let vidsrc = e.currentTarget.querySelector("video").getAttribute("src");
+
+                aside.querySelector("h1").innerText = tit;
+                aside.querySelector("p").innerText = txt;
+                aside.querySelector("video").setAttribute("src", vidsrc);
+                aside.querySelector("video").play();
+                aside.classList.add("on");
+            });
+            close.addEventListener("click", () => {
+                aside.querySelector("video").pause();
+                aside.classList.remove("on");
+            });
+        };
+
+
+
+
+         document.addEventListener("DOMContentLoaded", function () {
+    const loom = document.querySelector('.loom');
+    const we = document.querySelector('.we');
+    const b = document.querySelector('.b');
+    const loomMeaning = document.getElementById('loom-meaning');
+
+    loom.addEventListener('mouseenter', () => {
+      loomMeaning.style.opacity = '1';
+      loomMeaning.style.visibility = 'visible';
+
+      we.style.color = 'white';
+      b.style.color = 'white';
+      b.style.borderBottom = '2px solid gray';
+      b.style.paddingBottom = '2px';
+      loom.style.color = 'gray';
+    });
+
+    loom.addEventListener('mouseleave', () => {
+      loomMeaning.style.opacity = '0';
+      loomMeaning.style.visibility = 'hidden';
+
+      we.style.color = '';
+      b.style.color = '';
+      b.style.borderBottom = '';
+      b.style.paddingBottom = '';
+      loom.style.color = '';
+    });
+  });
+    </script> -->
+
+
+</body>
+
+</html>
